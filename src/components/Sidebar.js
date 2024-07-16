@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { BsArrowLeftShort } from "react-icons/bs";
 import { AiOutlineProduct} from "react-icons/ai";
-import { FaSearch } from "react-icons/fa";
+import { FaSearch, FaArrowCircleRight } from "react-icons/fa";
 import { MdSpaceDashboard, MdOutlineWebAsset, MdOutlineArrowDropDownCircle } from "react-icons/md";
 import { FiHome } from "react-icons/fi";
 import { RiContactsBook3Line } from "react-icons/ri";
@@ -51,7 +50,7 @@ export const Sidebar = ()=>{
     <section className="sticky top-0 flex-row">
         <div className="flex">
             <div className={`bg-[#0079FF] h-screen ${open ? "md:w-72 w-60 md:opacity-100 opacity-95" : "w-20"} duration-500 absolute z-10`}>
-                <BsArrowLeftShort className={`bg-white text-[#0079FF] text-3xl rounded-full absolute -right-10 top-9 border border-blue-500 cursor-pointer -mt-2 ${!open && "rotate-180"}`} onClick={() => setOpen(!open)}/>
+             <FaArrowCircleRight className={`bg-white text-[#0079FF] text-3xl rounded-full absolute -right-10 top-9 border border-blue-500 cursor-pointer -mt-2 ${!open && "rotate-180"}`} onClick={() => setOpen(!open)}/>
 
                 <div className={` bg-white ${!open ? "w-[5rem] items-center inline-flex  h-20 px-4": "md:px-16 pl-8"} ${!open ? " py-4 pb-0 duration-500": ""}`}>
                   {!open ? <motion.img id="NoumaIco" src={noumaIco} className={`size-10 cursor-pointer block float-left mr-2 duration-500`}
