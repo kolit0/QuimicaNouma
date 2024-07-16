@@ -8,42 +8,50 @@ import { RiContactsBook3Line } from "react-icons/ri";
 import noumaIco from "../FavIcon/favicon.ico";
 import Navbar from "./Navbar";
 import { motion } from "framer-motion";
-import nouma from "../Imagenes/quimicaNOUMA.png"
+import nouma from "../Imagenes/quimicaNOUMA.png";
+import React from "react";
+import { useTranslation } from "react-i18next";
 
-const Sidebar = ()=>{
+export const Sidebar = ()=>{
+  const [t] = useTranslation("global");
   const [open, setOpen] = useState(true);
   const [submenuopen, setSubmenuOpen] = useState(false);
   const [submenuopen2, setSubmenuOpen2] = useState(false);
   const Menus = [
-    { title: "Inicio", icon: <FiHome />},
-    { title: "Paginas", 
+    { title: t("sidebar.home"), icon: <FiHome />, href: "../Home"},
+    { title: t("sidebar.pages"), 
       icon: <MdOutlineWebAsset />,
       submenu2: true,
       subemnuItems2: [
-        {title: "Grupo Nouma"},
+        {title: "Grupo Nouma", href: "https://www.gruponouma.com"},
         {title: "Nouma Trading & Logistics"},
-        {title: "Vencatalyst"},
+        {title: "Vencatalyst", href: "https://vencatalyst.com.ve"},
       ],
     },
-    { title: "Productos", 
+    { title: t("sidebar.products"), 
       icon: <AiOutlineProduct />,
-      spacing: true,
+      href: "../Products",
       submenu: true,
       subemnuItems: [
-        { title: "Submenu 1"},
-        { title: "Submenu 2"},
-        { title: "Submenu 3"},
-        { title: "Submenu 4"},
-        { title: "Submenu 5"},
+        {title: t("productsMenu.industry"),
+        href: "../Products/Industry"
+        },
+        {title: t("productsMenu.clean"),
+          href: "../Products/Cleaning"
+        },
+        {title: t("productsMenu.cosmetics"),
+        href: "../Products/Cosmetics"},
+        {title: t("productsMenu.food"),
+        href: "../Products/Food"},
       ],
     },
-    { title: "Contactanos", icon: <RiContactsBook3Line />},
+    { title: t("sidebar.contact"), icon: <RiContactsBook3Line />, href: "../Contact"},
   ];
   return (
     <section className="sticky top-0 flex-row">
         <div className="flex">
-            <div className={`bg-blue-500 h-screen ${open ? "md:w-72 w-60 md:opacity-100 opacity-95" : "w-20"} duration-500 absolute z-10`}>
-                <BsArrowLeftShort className={`bg-white text-blue-500 text-3xl rounded-full absolute -right-10 top-9 border border-blue-500 cursor-pointer -mt-2 ${!open && "rotate-180"}`} onClick={() => setOpen(!open)}/>
+            <div className={`bg-[#0079FF] h-screen ${open ? "md:w-72 w-60 md:opacity-100 opacity-95" : "w-20"} duration-500 absolute z-10`}>
+                <BsArrowLeftShort className={`bg-white text-[#0079FF] text-3xl rounded-full absolute -right-10 top-9 border border-blue-500 cursor-pointer -mt-2 ${!open && "rotate-180"}`} onClick={() => setOpen(!open)}/>
 
                 <div className={` bg-white ${!open ? "w-[5rem] items-center inline-flex  h-20 px-4": "md:px-16 pl-8"} ${!open ? " py-4 pb-0 duration-500": ""}`}>
                   {!open ? <motion.img id="NoumaIco" src={noumaIco} className={`size-10 cursor-pointer block float-left mr-2 duration-500`}
@@ -60,16 +68,16 @@ const Sidebar = ()=>{
                 <ul className="pt-2">
                 {Menus.map((menu, index) =>(
                     <>
-                        <li key={index} className={`text-gray-300 text-xl flex items-center gap-x-4 cursor-pointer p-2 hover:bg-slate-600 duration-200 ease-in-out ${menu.spacing ? "mt-9" : "mt-2"} mt-2  border-b-2`} >
-                            <span className="text-2xl block float-left">
+                        <li key={index} className={`text-gray-300 text-xl flex items-center gap-x-4 cursor-pointer p-2 hover:bg-[#00DFA2] hover:text-black ${menu.spacing ? "mt-9" : "mt-2"} mt-2  border-b-2`} >
+                            <a className="text-2xl block float-left" href={menu.href}>
                             {menu.icon ? menu.icon : <MdSpaceDashboard/>}
-                            </span>
-                            <span className={`text=base font-medium flex-1 duration-500 ${!open && "hidden"}`}>{menu.title}</span>
+                            </a>
+                            <a href={menu.href} className={`text-base font-medium flex-1 duration-500 ${!open && "hidden"}`}>{menu.title}</a>
                             {menu.submenu && open && (
-                            <MdOutlineArrowDropDownCircle className={`text-gray-300 text-2xl rounded-full border border-gray-300 cursor-pointer hover:bg-gray-300 hover:text-blue-500 ${submenuopen && "rotate-180"}`} onClick={() => setSubmenuOpen (!submenuopen)}/>
+                            <MdOutlineArrowDropDownCircle className={`text-gray-300 text-2xl rounded-full border border-gray-300 cursor-pointer hover:bg-[#F6FA70] hover:text-black ${submenuopen && "rotate-180"}`} onClick={() => setSubmenuOpen (!submenuopen)}/>
                             )}
                             {menu.submenu2 && open && (
-                            <MdOutlineArrowDropDownCircle className={`text-gray-300 text-2xl rounded-full border border-gray-300 cursor-pointer hover:bg-gray-300 hover:text-blue-500 ${submenuopen2 && "rotate-180"}`} onClick={() => setSubmenuOpen2 (!submenuopen2)}/>
+                            <MdOutlineArrowDropDownCircle className={`text-gray-300 text-2xl rounded-full border border-gray-300 cursor-pointer hover:bg-[#F6FA70] hover:text-black ${submenuopen2 && "rotate-180"}`} onClick={() => setSubmenuOpen2 (!submenuopen2)}/>
                             )}
                         </li>
 
@@ -86,9 +94,9 @@ const Sidebar = ()=>{
                         <ul>
                             {menu.subemnuItems.map((subemnuItem, index) =>(
                                 <motion.li 
-                                whileHover={{ scale: [null, 1.1, 1] }}
-                                key={index} className={`text-gray-300 text-sm flex items-center gap-x-4 cursor-pointer p-2 px-5 hover:bg-slate-600 rounded-md ${menu.spacing ? "mt-5" : "mt-2"} mt-2`}>
-                                {subemnuItem.title}
+                                whileHover={{ scale: [null, 1.1, 1.1] }}
+                                key={index} className={`text-gray-300 text-sm flex items-center gap-x-4 cursor-pointer p-2 px-5 hover:bg-[#00DFA2] hover:text-black rounded-md ${menu.spacing ? "mt-5" : "mt-2"} mt-2`}>
+                                    <a href={subemnuItem.href} className={`flex-1 duration-500 ${!open && "hidden"}`}>{subemnuItem.title}</a>
                                 </motion.li>
                             ))}
                         </ul>  
@@ -107,9 +115,9 @@ const Sidebar = ()=>{
                         <ul>
                             {menu.subemnuItems2.map((subemnuItem2, index) =>(
                                 <motion.li 
-                                whileHover={{ scale: [null, 1.1, 1] }}
-                                 key={index} className={`text-gray-300 text-sm flex items-center gap-x-4 cursor-pointer p-2 px-5 hover:bg-slate-600 rounded-md ${menu.spacing ? "mt-5" : "mt-2"} mt-2`}>
-                                {subemnuItem2.title}
+                                whileHover={{ scale: [null, 1.1, 1.1] }}
+                                 key={index} href={subemnuItem2.href} className={`text-gray-300 text-sm flex items-center gap-x-4 cursor-pointer p-2 px-5 hover:bg-[#00DFA2] hover:text-black rounded-md ${menu.spacing ? "mt-5" : "mt-2"} mt-2`}>
+                                    <a href={subemnuItem2.href} className={`flex-1 duration-500 ${!open && "hidden"}`}>{subemnuItem2.title}</a>
                                 </motion.li>
                             ))}
                         </ul>
@@ -125,7 +133,7 @@ const Sidebar = ()=>{
                 </div>
 
             </div>
-            <div className={`bg-blue-500 h-20 flex w-screen duration-500 items-center justify-end z-0`}>
+            <div className={`bg-[#0079FF] h-20 flex w-screen duration-500 items-center justify-end z-0`}>
             <Navbar />
             </div>
         </div>
