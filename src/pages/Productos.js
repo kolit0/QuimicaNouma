@@ -5,8 +5,12 @@ import Contacto from "../components/ContactoEnviar";
 import Footer from "../components/footer";
 import Productos from "../components/ProductosContenido";
 import Ws from "../components/wsBtn";
+import { useEffect } from 'react';
 
 export default function Products() {
+  useEffect(() => {
+    document.title = "Productos";
+  }, []);
     return(
       <>
         <div className='font-Pthin'>

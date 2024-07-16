@@ -5,8 +5,12 @@ import Contacto from "../components/ContactoEnviar";
 import Footer from "../components/footer";
 import Industry from "../components/Industrial";
 import Ws from "../components/wsBtn";
+import { useEffect } from 'react';
 
 export default function ProductsInd () {
+  useEffect(() => {
+    document.title = 'Sector Industrial - Química Nouma';
+  }, []);
     return(
       <>
         <div className='font-Pthin'>

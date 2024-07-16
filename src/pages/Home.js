@@ -5,8 +5,12 @@ import Inicio2 from "../components/Inicio2";
 import Inicio3 from '../components/Inicio3';
 import Footer from "../components/footer";
 import Ws from "../components/wsBtn";
+import { useEffect } from 'react';
 
 export default function Home() {
+  useEffect(() => {
+    document.title = 'Química Nouma';
+  }, []);
     return(
       <>
         <div className='font-Pthin'>

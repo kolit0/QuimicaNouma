@@ -5,8 +5,13 @@ import ContactoDirectorio from "../components/ContactoDirectorio";
 import ContactoInicio from "../components/ContactoInicio";
 import ContactoEnviar from '../components/ContactoEnviar';
 import Ws from "../components/wsBtn";
+import { useEffect } from 'react';
 
 export default function Contact() {
+    useEffect(() => {
+      document.title = 'Contacto - Química Nouma'
+    }, [])
+
   return(
     <>
       <div className='font-Pthin'>
