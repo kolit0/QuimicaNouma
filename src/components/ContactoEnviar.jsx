@@ -3,6 +3,7 @@ import { useInView } from "framer-motion";
 import imgProductos from "../Imagenes/productos.jpg";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from 'framer-motion';
+import { useState, useRef } from "react";
 
 
 function Contactar({children}) {
