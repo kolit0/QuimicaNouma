@@ -1,6 +1,6 @@
 import { useState } from "react";
+import { BsArrowLeftShort } from "react-icons/bs";
 import { AiOutlineProduct} from "react-icons/ai";
-import { FaSearch, FaArrowCircleRight } from "react-icons/fa";
 import { MdSpaceDashboard, MdOutlineWebAsset, MdOutlineArrowDropDownCircle } from "react-icons/md";
 import { FiHome } from "react-icons/fi";
 import { RiContactsBook3Line } from "react-icons/ri";
@@ -13,13 +13,13 @@ import { useTranslation } from "react-i18next";
 
 export const Sidebar = ()=>{
   const [t] = useTranslation("global");
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const [submenuopen, setSubmenuOpen] = useState(false);
   const [submenuopen2, setSubmenuOpen2] = useState(false);
   const Menus = [
     { title: t("sidebar.home"), icon: <FiHome />, href: "../Home"},
     { title: t("sidebar.pages"), 
-      icon: <MdOutlineWebAsset />,
+      icon: <MdOutlineWebAsset onClick={() => setOpen(!open) & setSubmenuOpen2(!submenuopen2)} />,
       submenu2: true,
       subemnuItems2: [
         {title: "Grupo Nouma", href: "https://www.gruponouma.com"},
@@ -50,7 +50,7 @@ export const Sidebar = ()=>{
     <section className="sticky top-0 flex-row">
         <div className="flex">
             <div className={`bg-[#0079FF] h-screen ${open ? "md:w-72 w-60 md:opacity-100 opacity-95" : "w-20"} duration-500 absolute z-10`}>
-             <FaArrowCircleRight className={`bg-white text-[#0079FF] text-3xl rounded-full absolute -right-10 top-9 border border-blue-500 cursor-pointer -mt-2 ${!open && "rotate-180"}`} onClick={() => setOpen(!open)}/>
+                <BsArrowLeftShort className={`bg-white text-[#0079FF] text-3xl rounded-full absolute -right-10 top-9 border border-blue-500 cursor-pointer -mt-2 ${!open && "rotate-180"}`} onClick={() => setOpen(!open) & setSubmenuOpen2(!submenuopen2)}/>
 
                 <div className={` bg-white ${!open ? "w-[5rem] items-center inline-flex  h-20 px-4": "md:px-16 pl-8"} ${!open ? " py-4 pb-0 duration-500": ""}`}>
                   {!open ? <motion.img id="NoumaIco" src={noumaIco} className={`size-10 cursor-pointer block float-left mr-2 duration-500`}
@@ -59,10 +59,6 @@ export const Sidebar = ()=>{
                   />}
                 </div>
                 <div className=" p-5 pt-1">
-                <div className={`flex items-center rounded-md bg-slate-600 mt-6 ${!open ? "px-2.5": "px-4"} px-2 py-2`}>
-                    <FaSearch className={`text-white text-lg block float-left cursor-pointer ${open && "mr-2"}`}/>
-                    <input type={"search"} placeholder="Buscar" className={`px-1 text-base bg-transparent w-full text-white focus:outline-none ${!open && "hidden"}`}/>
-                </div>
 
                 <ul className="pt-2">
                 {Menus.map((menu, index) =>(
