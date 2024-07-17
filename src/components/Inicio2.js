@@ -16,12 +16,12 @@ function Section({ children }) {
   const isInView4 = useInView(ref4, { once: true });
 
   return (
-    <section className='bg-center bg-cover bg-blend-multiply bg-gray-500 h-screen w-screen flex flex-col' style={{backgroundImage: `url(${imgImport})`}} >
+    <section className='bg-center bg-cover bg-blend-multiply bg-gray-500 h-screen w-screen flex max-md:justify-center' style={{backgroundImage: `url(${imgImport})`}} >
       <div className='w-full h-40 bg-[#ffffff1e] bg-opacity-40 backdrop-blur-md'>  
         <div className='h-screen shrink md:w-80 w-10 md:bg-white backdrop-blur-md'>
         </div>
       </div>
-      <div className='flex-col absolute md:grid md:grid-cols-3 h-screen md:ml-60 md:place-items-start  place-items-center z-10 max-md:space-y-10 max-md:px-10 pr-40'>
+      <div className='flex-col absolute md:grid md:grid-cols-3 h-screen md:ml-60 md:place-items-start  place-items-center z-10 max-md:space-y-10'>
         <div className='bg-[#0e1852] text-gray-300 w-auto max-w-[30rem] md:max-h-40 md:h-auto md:py-5 h-20 content-center place-items-center' style={{
           transform: isInView ? "none" : "translateX(-200px)",
           opacity: isInView ? 1 : 0,
