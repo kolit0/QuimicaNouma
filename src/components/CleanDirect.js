@@ -18,14 +18,14 @@ export default function Section() {
                             <TfiMenu className="text-white max-md:hidden"/>
                         </div>
                         <div>
-                            <h2 className="md:text-xl text-white font-extralight">{t("clean.subTitle")}</h2>
+                            <a href="../Home" className="md:text-xl text-white font-extralight underline hover:text-blue-500">{t("clean.subTitle")}</a>
                         </div>
                         <div className="flex place-items-center">
                             <FaChevronRight className="text-white"/>
 
                         </div>
                         <div>
-                            <h2 className="md:text-xl text-white font-extralight">{t("clean.subTitle2")}</h2>
+                            <a href="../Products" className="md:text-xl text-white font-extralight underline hover:text-blue-500">{t("clean.subTitle2")}</a>
                         </div>
                         <div className="flex place-items-center">
                             <FaChevronRight className="text-white"/>
