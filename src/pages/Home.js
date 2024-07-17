@@ -18,16 +18,16 @@ export default function Home() {
               <Sidebar/>
               <Ws/>
             </div>
-            <div className='flex ml-20 z-0'>
+            <div className='flex md:ml-20 z-0'>
               <Inicio></Inicio>
             </div>
-            <div className='flex ml-20 z-0'> 
+            <div className='flex md:ml-20 z-0'> 
               <Inicio2></Inicio2>
             </div>
-            <div className='flex ml-20 z-0'> 
+            <div className='flex md:ml-20 z-0'> 
               <Inicio3></Inicio3>
             </div>
-            <div className='flex pl-20 z-0'>
+            <div className='flex md:ml-20 z-0'>
               <Footer></Footer>
             </div>
       </div>

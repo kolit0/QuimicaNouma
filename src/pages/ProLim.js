@@ -18,16 +18,16 @@ export default function ProductsInd () {
               <Sidebar/>
               <Ws/>
             </div>
-            <div className='flex ml-20 z-0'>
+            <div className='flex md:ml-20 z-0'>
               <CleanDir/>
             </div>
-            <div className='flex ml-20 z-0'>
+            <div className='flex md:ml-20 z-0'>
               <Clean/>
             </div>
-            <div className='flex ml-20 z-0'>
+            <div className='flex md:ml-20 z-0'>
               <Contacto></Contacto>
             </div>
-            <div className='flex pl-20 z-0'>
+            <div className='flex md:ml-20 z-0'>
               <Footer></Footer>
             </div>
       </div>
