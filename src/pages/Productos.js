@@ -9,7 +9,7 @@ import { useEffect } from 'react';
 
 export default function Products() {
   useEffect(() => {
-    document.title = "Productos";
+    document.title = "Productos - Química Nouma";
   }, []);
     return(
       <>

@@ -9,7 +9,7 @@ import { useEffect } from 'react';
 
 export default function Home() {
   useEffect(() => {
-    document.title = 'Química Nouma';
+    document.title = 'Inicio - Química Nouma';
   }, []);
     return(
       <>
