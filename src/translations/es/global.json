@@ -2,6 +2,9 @@
     "navbar": {
         "btn": "Contáctanos"
     },
+    "download": {
+        "btn": "Descargar Hoja de Seguridad"
+    },
     "email": {
         "send": "Email Enviado"
     },
@@ -22,7 +25,7 @@
         "food": "Alimentos y Bebidas"
     },
     "home": {
-        "title": "DEDICADOS A LA MATERIA PRIMA",
+        "title": "MATERIA PRIMA DE CALIDAD",
         "text": "Dedicados a la Importación, almacenamiento y distribución de materias prima para diversos sectores (Alimentos, pinturas, cosméticos, limpieza e industrial) a nivel nacional.",
         "subtitle": "ACERCA DE NOSOTROS",
         "miniSubtitle": "Seguro de Mercancía",
@@ -82,7 +85,7 @@
         "acetatoN": "Acetato de N-Propilo",
         "acidoAcetico": "Ácido Acético USP",
         "acidoCitrico": "Ácido Cítrico (Grado Alimenticio)",
-        "acidoEstearico": "Ácido Cítrico (Triple Prensado)",
+        "acidoEstearico": "Ácido Esteárico (Triple Prensado)",
         "acidoFosforico": "Ácido Fosfórico (Grado Alimenticio)",
         "acidoSulfonico": "Ácido Sulfónico (96%)",
         "albuminaHuevo": "Albúmina de Huevo",
@@ -126,7 +129,7 @@
         "monoetilenglicol": "Monoetilenglicol",
         "nipacidex": "Nipacidexiolina -5",
         "nonil": "Nonil Fenol 10 Moles",
-        "paraformalehido": "Paraformaldehdo",
+        "paraformalehido": "Paraformaldehido",
         "peroxido": "Peróxido de Hidrógeno",
         "polietileno": "Polietileno de Alta Densidad (HDPE)",
         "propianato": "Propionato de Calcio (Grado Alimenticio)",
@@ -144,6 +147,30 @@
         "tripolifosfatoAli": "Tripolifosfato de Sodio (Grado Alimenticio)",
         "tripolifosfatoTec": "Tripolifosfato de Sodio (Grado Técnico)",
         "xileno": "Xileno"
+    },
+    "flags": {
+        "china": "China",
+        "brasil": "Brasil",
+        "usa": "USA",
+        "vietnam": "Vietnam",
+        "vzla": "Venezuela",
+        "tailandia": "Tailandia",
+        "polonia": "Polonia",
+        "india": "India",
+        "alemania": "Alemania",
+        "corea": "Corea del Sur",
+        "kazajistan": "Kazajistan",
+        "malasia": "Malasia",
+        "arg": "Argentina",
+        "peru": "Peru",
+        "rusia": "Rusia",
+        "indonesia": "Indonesia",
+        "colombia": "Colombia",
+        "noruega": "Noruega",
+        "qatar": "Qatar",
+        "paises": "Paises Bajos",
+        "africa": "Nueva Africa",
+        "emiratos": "Emiratos Arabes"
     },
     "content": {
         "present": "Presentación:",

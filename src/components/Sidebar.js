@@ -13,9 +13,9 @@ import { useTranslation } from "react-i18next";
 
 export const Sidebar = ()=>{
   const [t] = useTranslation("global");
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
   const [submenuopen, setSubmenuOpen] = useState(false);
-  const [submenuopen2, setSubmenuOpen2] = useState(false);
+  const [submenuopen2, setSubmenuOpen2] = useState(true);
   const Menus = [
     { title: t("sidebar.home"), icon: <FiHome />, href: "../Home"},
     { title: t("sidebar.pages"), 

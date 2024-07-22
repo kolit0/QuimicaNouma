@@ -1,4 +1,25 @@
 import React from 'react';
+import Acetico from "./Botones-Descarga/Acetico";
+import AcidoCitrico from "./Botones-Descarga/AcidoCitrico";
+import Fosforico from "./Botones-Descarga/Fosforico";
+import Yuca from "./Botones-Descarga/Yuca";
+import Papa from "./Botones-Descarga/Papa";
+import BenzoatoSodio from "./Botones-Descarga/BenzoatoSodio";
+import Cmc from "./Botones-Descarga/Cmc";
+import Carragenato from "./Botones-Descarga/Carragenato";
+import CitratoSodio from "./Botones-Descarga/CitratoSodio";
+import CloruroCal from "./Botones-Descarga/CloruroCal";
+import Dextrosa from "./Botones-Descarga/Dextrosa";
+import Eritorbato from "./Botones-Descarga/Eritorbato";
+import Glutamato from "./Botones-Descarga/Glutamato";
+import GomaGuar from "./Botones-Descarga/GomGuar";
+import GomaXan from "./Botones-Descarga/GomaXan";
+import Metabisulfato from "./Botones-Descarga/Metabisulfato";
+import Propianato from "./Botones-Descarga/Propianato";
+import ProteinaSoya from "./Botones-Descarga/ProteinaSoya";
+import Sorbato from "./Botones-Descarga/Sorbato";
+import Tripolifosfato from "./Botones-Descarga/Tripolifosfato";
+import Propil from "./Botones-Descarga/Propil";
 import imgTambor from "../Imagenes/Productos/Tambor.png";
 import imgCarboya from "../Imagenes/Productos/Carboya.png";
 import imgIbc from "../Imagenes/Productos/IBC.png";
@@ -312,8 +333,11 @@ function Food() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center text-lg font-semibold'>{t("content.origin")}</h2>
             
-            <div className='flex justify-center'>
+            <div className='flex flex-col justify-center'>
               <img src={china} className='w-40 h-auto border-2 border-black' alt="Tambor"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.china")}</h4>
+            </div>
             </div>
             </div>
             <div className=' md:px-2 max-md:pt-5 border-[#0e1852]'>
@@ -324,6 +348,9 @@ function Food() {
             </div>
             </div>
             </motion.div>
+            <div className='flex items-center justify-center'>
+              <Acetico></Acetico>
+          </div>
           </TabPanel>
 
 
@@ -368,6 +395,9 @@ function Food() {
             
             <div className='flex flex-col gap-3 justify-center items-center'>
               <img src={china} className='w-40 h-auto border-2 border-black' alt="China"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.china")}</h4>
+            </div>
             </div>
             </div>
             <div className='md:px-2 max-md:pt-5 border-[#0e1852]'>
@@ -378,6 +408,9 @@ function Food() {
             </div>
             </div>
             </motion.div>
+            <div className='flex items-center justify-center'>
+              <AcidoCitrico></AcidoCitrico>
+          </div>
           </TabPanel>
 
 
@@ -426,9 +459,21 @@ function Food() {
             
             <div className='flex flex-col gap-3 justify-center items-center'>
               <img src={china} className='w-40 h-auto border-2 border-black' alt="China"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.china")}</h4>
+            </div>
               <img src={brasil} className='w-40 h-auto border-2 border-black' alt="Brasil"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.brasil")}</h4>
+            </div>
               <img src={usa} className='w-40 h-auto border-2 border-black' alt="USA"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.usa")}</h4>
+            </div>
               <img src={vietnam} className='w-40 h-auto border-2 border-black' alt="Vietnam"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.vietnam")}</h4>
+            </div>
             </div>
             </div>
             <div className=' md:px-2 max-md:pt-5 border-[#0e1852]'>
@@ -439,6 +484,9 @@ function Food() {
             </div>
             </div>
             </motion.div>
+            <div className='flex items-center justify-center'>
+              <Fosforico></Fosforico>
+          </div>
           </TabPanel>
 
 
@@ -481,6 +529,9 @@ function Food() {
             
             <div className='flex flex-col gap-3 justify-center items-center'>
               <img src={vzla} className='w-40 h-auto border-2 border-black' alt="Venezuela"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.vzla")}</h4>
+            </div>
             </div>
             </div>
             <div className='md:px-2 max-md:pt-5 border-[#0e1852]'>
@@ -534,6 +585,9 @@ function Food() {
               
               <div className='flex flex-col gap-3 justify-center items-center'>
                 <img src={brasil} className='w-40 h-auto border-2 border-black' alt="Brasil"/>
+                <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.brasil")}</h4>
+            </div>
               </div>
               </div>
               <div className='md:px-2 max-md:pt-5 border-[#0e1852]'>
@@ -582,6 +636,9 @@ function Food() {
             
             <div className='flex flex-col gap-3 justify-center items-center'>
               <img src={china} className='w-40 h-auto border-2 border-black' alt="China"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.china")}</h4>
+            </div>
             </div>
             </div>
             <div className='md:px-2 max-md:pt-5 border-[#0e1852]'>
@@ -605,7 +662,7 @@ function Food() {
               mass: 0.5
             }}>
             <h2 className='text-center border-b-2 border-[#0e1852] text-lg font-semibold'>{t("titles.almidonYuca")}</h2>
-            <div className='flex md:flex-row flex-col justify-center border-b-4 pb-4 border-[#0e1852]'>
+            <div className='flex md:flex-row flex-col justify-center pb-4 border-[#0e1852]'>
             <div className=' md:border-r-4 md:px-2 max-md:border-b-4 max-md:py-5 border-[#0e1852]'>
               <h2 className='text-center text-lg font-semibold'>{t("content.present")}
               </h2>
@@ -630,6 +687,9 @@ function Food() {
             
             <div className='flex flex-col gap-3 justify-center items-center'>
               <img src={tailandia} className='w-40 h-auto border-2 border-black' alt="Tailandia"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.tailandia")}</h4>
+            </div>
             </div>
             </div>
             <div className='md:px-2 max-md:pt-5 border-[#0e1852]'>
@@ -640,7 +700,11 @@ function Food() {
             </div>
             </div>
             </div>
+            <div className='flex items-center justify-center pb-3'>
+              <Yuca></Yuca>
+          </div>
             </motion.div>
+            
 
             <motion.div className={`flex justify-center flex-col  border-t-4 border-[#0e1852]`}
             initial={{ y: -250, opacity: 0 }}
@@ -653,7 +717,7 @@ function Food() {
               mass: 0.5
             }}>
             <h2 className='text-center border-b-2 border-[#0e1852] text-lg font-semibold'>{t("titles.almidonPapa")}</h2>
-            <div className='flex md:flex-row flex-col justify-center border-b-4 pb-4 border-[#0e1852]'>
+            <div className='flex md:flex-row flex-col justify-center pb-4 border-[#0e1852]'>
             <div className=' md:border-r-4 md:px-2 max-md:border-b-4 max-md:py-5 border-[#0e1852]'>
               <h2 className='text-center text-lg font-semibold'>{t("content.present")}
               </h2>
@@ -678,6 +742,9 @@ function Food() {
             
             <div className='flex flex-col gap-3 justify-center items-center'>
               <img src={polonia} className='w-40 h-auto border-2 border-black' alt="Polonia"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.polonia")}</h4>
+            </div>
             </div>
             </div>
             <div className='md:px-2 max-md:pt-5 border-[#0e1852]'>
@@ -689,6 +756,9 @@ function Food() {
             </div>
             </div>
             </motion.div>
+            <div className='flex items-center justify-center'>
+              <Papa></Papa>
+          </div>
           </TabPanel>
 
 
@@ -728,6 +798,9 @@ function Food() {
             
             <div className='flex flex-col gap-3 justify-center items-center'>
               <img src={china} className='w-40 h-auto border-2 border-black' alt="China"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.china")}</h4>
+            </div>
             </div>
             </div>
             <div className='md:px-2 max-md:pt-5 border-[#0e1852]'>
@@ -738,6 +811,9 @@ function Food() {
             </div>
             </div>
           </motion.div>
+          <div className='flex items-center justify-center'>
+              <BenzoatoSodio></BenzoatoSodio>
+          </div>
         </TabPanel>
 
 
@@ -778,6 +854,9 @@ function Food() {
             
             <div className='flex flex-col gap-3 justify-center items-center'>
               <img src={china} className='w-40 h-auto border-2 border-black' alt="China"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.china")}</h4>
+            </div>
             </div>
             </div>
             <div className='md:px-2 max-md:pt-5 border-[#0e1852]'>
@@ -789,6 +868,9 @@ function Food() {
             </div>
             
             </motion.div>
+            <div className='flex items-center justify-center'>
+              <Cmc></Cmc>
+          </div>
         </TabPanel>
 
 
@@ -832,6 +914,9 @@ function Food() {
             
             <div className='flex flex-col gap-3 justify-center items-center'>
               <img src={china} className='w-40 h-auto border-2 border-black' alt="China"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.china")}</h4>
+            </div>
             </div>
             </div>
             <div className='md:px-2 max-md:pt-5 border-[#0e1852]'>
@@ -842,6 +927,9 @@ function Food() {
             </div>
             </div>
           </motion.div>
+          <div className='flex items-center justify-center'>
+              <Carragenato></Carragenato>
+          </div>
         </TabPanel>
 
 
@@ -884,6 +972,9 @@ function Food() {
             
             <div className='flex flex-col gap-3 justify-center items-center'>
               <img src={china} className='w-40 h-auto border-2 border-black' alt="China"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.china")}</h4>
+            </div>
             </div>
             </div>
             <div className='md:px-2 max-md:pt-5 border-[#0e1852]'>
@@ -894,6 +985,9 @@ function Food() {
             </div>
             </div>
           </motion.div>
+          <div className='flex items-center justify-center'>
+              <CitratoSodio></CitratoSodio>
+          </div>
         </TabPanel>
 
 
@@ -938,6 +1032,9 @@ function Food() {
             
             <div className='flex flex-col gap-3 justify-center items-center'>
               <img src={india} className='w-40 h-auto border-2 border-black' alt="India"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.india")}</h4>
+            </div>
             </div>
             </div>
             <div className='md:px-2 max-md:pt-5 border-[#0e1852]'>
@@ -948,6 +1045,9 @@ function Food() {
             </div>
             </div>
           </motion.div>
+          <div className='flex items-center justify-center'>
+              <CloruroCal></CloruroCal>
+          </div>
         </TabPanel>
 
 
@@ -990,8 +1090,11 @@ function Food() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center text-lg font-semibold'>{t("content.origin")}</h2>
             
-            <div className='flex justify-center'>
+            <div className='flex flex-col justify-center'>
               <img src={china} className='w-40 h-auto border-2 border-black' alt="China"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.china")}</h4>
+            </div>
             </div>
             </div>
             <div className='md:px-2 max-md:pt-5 border-[#0e1852]'>
@@ -1003,6 +1106,9 @@ function Food() {
             </div>
             
             </motion.div>
+            <div className='flex items-center justify-center'>
+              <Dextrosa></Dextrosa>
+          </div>
         </TabPanel>
 
 
@@ -1045,8 +1151,11 @@ function Food() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center text-lg font-semibold'>{t("content.origin")}</h2>
             
-            <div className='flex justify-center'>
+            <div className='flex flex-col justify-center'>
               <img src={china} className='w-40 h-auto border-2 border-black' alt="China"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.china")}</h4>
+            </div>
             </div>
             </div>
             <div className='md:px-2 max-md:pt-5 border-[#0e1852]'>
@@ -1097,8 +1206,11 @@ function Food() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center text-lg font-semibold'>{t("content.origin")}</h2>
             
-            <div className='flex justify-center'>
+            <div className='flex flex-col justify-center'>
               <img src={china} className='w-40 h-auto border-2 border-black' alt="China"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.china")}</h4>
+            </div>
             </div>
             </div>
             <div className='md:px-2 max-md:pt-5 border-[#0e1852]'>
@@ -1110,6 +1222,9 @@ function Food() {
             </div>
             
             </motion.div>
+            <div className='flex items-center justify-center'>
+              <Eritorbato></Eritorbato>
+          </div>
         </TabPanel>
 
 
@@ -1155,8 +1270,11 @@ function Food() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center text-lg font-semibold'>{t("content.origin")}</h2>
             
-            <div className='flex justify-center'>
+            <div className='flex flex-col justify-center'>
               <img src={china} className='w-40 h-auto border-2 border-black' alt="China"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.china")}</h4>
+            </div>
             </div>
             </div>
             <div className='md:px-2 max-md:pt-5 border-[#0e1852]'>
@@ -1211,8 +1329,11 @@ function Food() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center text-lg font-semibold'>{t("content.origin")}</h2>
             
-            <div className='flex justify-center'>
+            <div className='flex flex-col justify-center'>
               <img src={china} className='w-40 h-auto border-2 border-black' alt="China"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.china")}</h4>
+            </div>
             </div>
             </div>
             <div className='md:px-2 max-md:pt-5 border-[#0e1852]'>
@@ -1224,6 +1345,9 @@ function Food() {
             </div>
             
             </motion.div>
+            <div className='flex items-center justify-center'>
+              <Glutamato></Glutamato>
+          </div>
           </TabPanel>
 
 
@@ -1267,8 +1391,11 @@ function Food() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center text-lg font-semibold'>{t("content.origin")}</h2>
             
-            <div className='flex justify-center'>
+            <div className='flex flex-col justify-center'>
               <img src={china} className='w-40 h-auto border-2 border-black' alt="China"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.china")}</h4>
+            </div>
             </div>
             </div>
             <div className='md:px-2 max-md:pt-5 border-[#0e1852]'>
@@ -1280,6 +1407,9 @@ function Food() {
             </div>
             
             </motion.div>
+            <div className='flex items-center justify-center'>
+              <GomaGuar></GomaGuar>
+          </div>
           </TabPanel>
 
 
@@ -1323,6 +1453,9 @@ function Food() {
             
             <div className='flex flex-col gap-3 justify-center items-center'>
               <img src={alemania} className='w-40 h-auto border-2 border-black' alt="Alemania"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.alemania")}</h4>
+            </div>
               <h2 className='text-center text-lg font-semibold'>{t("content.fabric")}</h2>
               <img src={fabricante4} className='w-40 h-auto' alt="Fabricante"/>
               <img src={fabricante5} className='w-40 h-auto' alt="Fabricante"/>
@@ -1337,6 +1470,9 @@ function Food() {
             </div>
             
             </motion.div>
+            <div className='flex items-center justify-center'>
+              <GomaXan></GomaXan>
+          </div>
         </TabPanel>
 
 
@@ -1375,7 +1511,13 @@ function Food() {
             
             <div className='flex flex-col gap-3 justify-center items-center'>
               <img src={alemania} className='w-40 h-auto border-2 border-black' alt="Alemania"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.alemania")}</h4>
+            </div>
               <img src={usa} className='w-40 h-auto border-2 border-black' alt="USA"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.usa")}</h4>
+            </div>
               <h2 className='text-center text-lg font-semibold'>{t("content.fabric")}</h2>
               <img src={fabricante} className='w-40 h-auto' alt="Fabricante"/>
             </div>
@@ -1388,6 +1530,9 @@ function Food() {
             </div>
             </div>
             </motion.div>
+            <div className='flex items-center justify-center'>
+              <Metabisulfato></Metabisulfato>
+          </div>
         </TabPanel>
 
 
@@ -1429,8 +1574,11 @@ function Food() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center text-lg font-semibold'>{t("content.origin")}</h2>
             
-            <div className='flex justify-center'>
+            <div className='flex flex-col justify-center'>
               <img src={china} className='w-40 h-auto border-2 border-black' alt="China"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.china")}</h4>
+            </div>
             </div>
             </div>
             <div className='md:px-2 max-md:pt-5 border-[#0e1852]'>
@@ -1442,6 +1590,9 @@ function Food() {
             </div>
             
             </motion.div>
+            <div className='flex items-center justify-center'>
+              <Propianato></Propianato>
+          </div>
         </TabPanel>
 
 
@@ -1492,7 +1643,13 @@ function Food() {
             
             <div className='flex flex-col gap-3 justify-center items-center'>
               <img src={corea} className='w-40 h-auto border-2 border-black' alt="Corea"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.corea")}</h4>
+            </div>
               <img src={china} className='w-40 h-auto border-2 border-black' alt="China"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.china")}</h4>
+            </div>
             </div>
             </div>
             <div className='md:px-2 max-md:pt-5 border-[#0e1852]'>
@@ -1503,6 +1660,9 @@ function Food() {
             </div>
             </div>
             </motion.div>
+            <div className='flex items-center justify-center'>
+              <Propil></Propil>
+          </div>
         </TabPanel>
 
 
@@ -1549,8 +1709,11 @@ function Food() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center text-lg font-semibold'>{t("content.origin")}</h2>
             
-            <div className='flex justify-center'>
+            <div className='flex flex-col justify-center'>
               <img src={china} className='w-40 h-auto border-2 border-black' alt="China"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.china")}</h4>
+            </div>
             </div>
             </div>
             <div className='md:px-2 max-md:pt-5 border-[#0e1852]'>
@@ -1562,6 +1725,9 @@ function Food() {
             </div>
             
             </motion.div>
+            <div className='flex items-center justify-center'>
+              <ProteinaSoya></ProteinaSoya>
+          </div>
         </TabPanel>
 
 
@@ -1606,8 +1772,11 @@ function Food() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center text-lg font-semibold'>{t("content.origin")}</h2>
             
-            <div className='flex justify-center'>
+            <div className='flex flex-col justify-center'>
               <img src={china} className='w-40 h-auto border-2 border-black' alt="China"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.china")}</h4>
+            </div>
             </div>
             </div>
             <div className='md:px-2 max-md:pt-5 border-[#0e1852]'>
@@ -1619,6 +1788,9 @@ function Food() {
             </div>
             
             </motion.div>
+            <div className='flex items-center justify-center'>
+              <Sorbato></Sorbato>
+          </div>
         </TabPanel>
 
 
@@ -1661,6 +1833,9 @@ function Food() {
             
             <div className='flex flex-col gap-3 justify-center items-center'>
               <img src={kazajistan} className='w-40 h-auto border-2 border-black' alt="Kazajistan"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.kazajistan")}</h4>
+            </div>
             </div>
             </div>
             <div className='md:px-2 max-md:pt-5 border-[#0e1852]'>
@@ -1672,6 +1847,9 @@ function Food() {
             </div>
             
             </motion.div>
+            <div className='flex items-center justify-center'>
+              <Tripolifosfato></Tripolifosfato>
+          </div>
           </TabPanel>
 
         </TabPanels>

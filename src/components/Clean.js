@@ -1,4 +1,22 @@
 import React from 'react';
+import Acetico from "./Botones-Descarga/Acetico";
+import Sulfonico from "./Botones-Descarga/Sulfonico";
+import Isopropilico from "./Botones-Descarga/Isopropilico";
+import Cetilico from "./Botones-Descarga/Cetilico";
+import Etilico from "./Botones-Descarga/Etilico";
+import Butilglicol from "./Botones-Descarga/Butilglicol";
+import Escamas from "./Botones-Descarga/Escamas";
+import CloruroBen from "./Botones-Descarga/CloruroBen";
+import Colorantes from "./Botones-Descarga/Colorantes";
+import Formol from "./Botones-Descarga/Formol";
+import Glicerina from "./Botones-Descarga/Glicerina";
+import Metasilicato from "./Botones-Descarga/Metasilicato";
+import Nicidexiolina from "./Botones-Descarga/Nipacidexiolina";
+import Nonifenol from "./Botones-Descarga/Nonifenol";
+import Peroxido from "./Botones-Descarga/Peroxido";
+import Sles from "./Botones-Descarga/Sles";
+import SodaCaustica from "./Botones-Descarga/SodaCaustica";
+import Tripolifosfato from './Botones-Descarga/Tripolifosfato';
 import imgTambor from "../Imagenes/Productos/Tambor.png";
 import imgTamborVerde from "../Imagenes/Productos/TamborVerde.png";
 import imgCarboya from "../Imagenes/Productos/Carboya.png";
@@ -243,7 +261,13 @@ function Clean() {
             
             <div className='flex flex-col gap-3 justify-center items-center'>
               <img src={malasia} className='w-40 h-auto border-2 border-black' alt="Singapur"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.malasia")}</h4>
+            </div>
               <img src={indonesia} className='w-40 h-auto border-2 border-black' alt="Indonesia"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.indonesia")}</h4>
+            </div>
             </div>
             </div>
             <div className='md:px-2 max-md:pt-5 border-[#0e1852]'>
@@ -300,8 +324,10 @@ function Clean() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center text-lg font-semibold'>{t("content.origin")}</h2>
             
-            <div className='flex justify-center'>
-              <img src={china} className='w-40 h-auto border-2 border-black' alt="Tambor"/>
+            <div className='flex flex-col justify-center'>
+              <img src={china} className='w-40 h-auto border-2 border-black' alt="Tambor"/>              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.china")}</h4>
+            </div>
             </div>
             </div>
             <div className=' md:px-2 max-md:pt-5 border-[#0e1852]'>
@@ -312,6 +338,9 @@ function Clean() {
             </div>
             </div>
             </motion.div>
+            <div className='flex items-center justify-center'>
+              <Acetico></Acetico>
+          </div>
           </TabPanel>
 
 
@@ -362,12 +391,30 @@ function Clean() {
             <h2 className='text-center'>{t("content.origin")}</h2>
             
             <div className='flex flex-col gap-3 justify-center items-center'>
-              <img src={india} className='w-40 h-auto border-2 border-black' alt="Tambor"/>
-              <img src={peru} className='w-40 h-auto border-2 border-black' alt="Tambor"/>
-              <img src={colombia} className='w-40 h-auto border-2 border-black' alt="Tambor"/>
-              <img src={corea} className='w-40 h-auto border-2 border-black' alt="Tambor"/>
-              <img src={noruega} className='w-40 h-auto border-2 border-black' alt="Tambor"/>
-              <img src={qatar} className='w-40 h-auto border-2 border-black' alt="Tambor"/>
+              <img src={india} className='w-40 h-auto border-2 border-black' alt="India"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.india")}</h4>
+            </div>
+              <img src={peru} className='w-40 h-auto border-2 border-black' alt="Peru"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.peru")}</h4>
+            </div>
+              <img src={colombia} className='w-40 h-auto border-2 border-black' alt="Colombia"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.colombia")}</h4>
+            </div>
+              <img src={corea} className='w-40 h-auto border-2 border-black' alt="Corea del Sur"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.corea")}</h4>
+            </div>
+              <img src={noruega} className='w-40 h-auto border-2 border-black' alt="Noruega"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.noruega")}</h4>
+            </div>
+              <img src={qatar} className='w-40 h-auto border-2 border-black' alt="Qatar"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.qatar")}</h4>
+            </div>
             </div>
             </div>
             <div className=' md:px-2 max-md:pt-5 border-[#0e1852]'>
@@ -379,6 +426,9 @@ function Clean() {
             </div>
             </div>
             </motion.div>
+            <div className='flex items-center justify-center'>
+              <Sulfonico></Sulfonico>
+          </div>
           </TabPanel>
 
 
@@ -420,9 +470,18 @@ function Clean() {
             <h2 className='text-center'>{t("content.origin")}</h2>
             
             <div className='flex flex-col gap-3 justify-center items-center'>
-              <img src={china} className='w-40 h-auto border-2 border-black' alt="Tambor"/>
-              <img src={paisesBajos} className='w-40 h-auto border-2 border-black' alt="Tambor"/>
-              <img src={rusia} className='w-40 h-auto border-2 border-black' alt="Tambor"/>
+              <img src={china} className='w-40 h-auto border-2 border-black' alt="China"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.china")}</h4>
+            </div>
+              <img src={paisesBajos} className='w-40 h-auto border-2 border-black' alt="Paises Bajos"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.paises")}</h4>
+            </div>
+              <img src={rusia} className='w-40 h-auto border-2 border-black' alt="Rusia"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.rusia")}</h4>
+            </div>
             </div>
             </div>
             <div className='md:px-2 max-md:pt-5 border-[#0e1852]'>
@@ -433,6 +492,9 @@ function Clean() {
             </div>
             </div>
           </motion.div>
+          <div className='flex items-center justify-center'>
+              <Isopropilico></Isopropilico>
+          </div>
           </TabPanel>
 
 
@@ -476,7 +538,13 @@ function Clean() {
             
             <div className='flex flex-col gap-3 justify-center items-center'>
               <img src={india} className='w-40 h-auto border-2 border-black' alt="India"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.india")}</h4>
+            </div>
               <img src={usa} className='w-40 h-auto border-2 border-black' alt="USA"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.usa")}</h4>
+            </div>
             </div>
             </div>
             <div className='md:px-2 max-md:pt-5 border-[#0e1852]'>
@@ -487,6 +555,10 @@ function Clean() {
             </div>
             </div>
             </motion.div>
+
+            <div className='flex items-center justify-center'>
+              <Cetilico></Cetilico>
+          </div>
             
           </TabPanel>
 
@@ -530,7 +602,13 @@ function Clean() {
             
             <div className='flex flex-col gap-3 justify-center items-center'>
               <img src={brasil} className='w-40 h-auto border-2 border-black' alt="Brasil"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.brasil")}</h4>
+            </div>
               <img src={usa} className='w-40 h-auto border-2 border-black' alt="USA"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.usa")}</h4>
+            </div>
             </div>
             </div>
             <div className='md:px-2 max-md:pt-5 border-[#0e1852]'>
@@ -541,6 +619,9 @@ function Clean() {
             </div>
             </div>
             </motion.div>
+            <div className='flex items-center justify-center'>
+              <Etilico></Etilico>
+          </div>
 
           </TabPanel>
 
@@ -586,8 +667,14 @@ function Clean() {
             <h2 className='text-center'>{t("content.origin")}</h2>
             
             <div className='flex flex-col gap-3 justify-center items-center'>
-              <img src={china} className='w-40 h-auto border-2 border-black' alt="Tambor"/>
-              <img src={paisesBajos} className='w-40 h-auto border-2 border-black' alt="Tambor"/>
+              <img src={china} className='w-40 h-auto border-2 border-black' alt="China"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.china")}</h4>
+            </div>
+              <img src={paisesBajos} className='w-40 h-auto border-2 border-black' alt="Paises bajos"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.paises")}</h4>
+            </div>
             </div>
             </div>
             <div className='md:px-2 max-md:pt-5 border-[#0e1852]'>
@@ -598,6 +685,9 @@ function Clean() {
             </div>
             </div>
           </motion.div>
+          <div className='flex items-center justify-center'>
+              <Butilglicol></Butilglicol>
+          </div>
           </TabPanel>
 
 
@@ -636,6 +726,9 @@ function Clean() {
             
             <div className='flex flex-col gap-3 justify-center items-center'>
               <img src={vzla} className='w-40 h-auto border-2 border-black' alt="Venezuela"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.vzla")}</h4>
+            </div>
             </div>
             </div>
             <div className='md:px-2 max-md:pt-5 border-[#0e1852]'>
@@ -646,6 +739,9 @@ function Clean() {
             </div>
             </div>
           </motion.div>
+          <div className='flex items-center justify-center'>
+              <Escamas></Escamas>
+          </div>
           </TabPanel>
 
 
@@ -688,6 +784,9 @@ function Clean() {
             
             <div className='flex flex-col gap-3 justify-center items-center'>
               <img src={china} className='w-40 h-auto border-2 border-black' alt="China"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.china")}</h4>
+            </div>
             </div>
             </div>
             <div className='md:px-2 max-md:pt-5 border-[#0e1852]'>
@@ -698,6 +797,9 @@ function Clean() {
             </div>
             </div>
           </motion.div>
+          <div className='flex items-center justify-center'>
+              <CloruroBen></CloruroBen>
+          </div>
           </TabPanel>
 
 
@@ -737,8 +839,11 @@ function Clean() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center  text-lg font-semibold'>{t("content.origin")}</h2>
             
-            <div className='flex justify-center'>
+            <div className='flex flex-col justify-center'>
               <img src={usa} className='w-40 h-auto border-2 border-black' alt="USA"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.usa")}</h4>
+            </div>
             </div>
             </div>
             <div className='md:px-2 max-md:pt-5 border-[#0e1852]'>
@@ -749,6 +854,9 @@ function Clean() {
             </div>
             </div>
             </motion.div>
+            <div className='flex items-center justify-center'>
+              <Colorantes></Colorantes>
+          </div>
 
           </TabPanel>
 
@@ -798,7 +906,13 @@ function Clean() {
             
             <div className='flex flex-col gap-3 justify-center items-center'>
               <img src={vzla} className='w-40 h-auto border-2 border-black' alt="Venezuela"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.vzla")}</h4>
+            </div>
               <img src={india} className='w-40 h-auto border-2 border-black' alt="India"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.india")}</h4>
+            </div>
             </div>
             </div>
             <div className='md:px-2 max-md:pt-5 border-[#0e1852]'>
@@ -809,6 +923,9 @@ function Clean() {
             </div>
             </div>
           </motion.div>
+          <div className='flex items-center justify-center'>
+              <Formol></Formol>
+          </div>
           </TabPanel>
 
 
@@ -860,8 +977,17 @@ function Clean() {
             
             <div className='flex flex-col gap-3 justify-center items-center'>
               <img src={peru} className='w-40 h-auto border-2 border-black' alt="Peru"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.peru")}</h4>
+            </div>
               <img src={argentina} className='w-40 h-auto border-2 border-black' alt="Argentina"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.arg")}</h4>
+            </div>
               <img src={brasil} className='w-40 h-auto border-2 border-black' alt="Brasil"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.brasil")}</h4>
+            </div>
             </div>
             </div>
             <div className='md:px-2 max-md:pt-5 border-[#0e1852]'>
@@ -872,6 +998,9 @@ function Clean() {
             </div>
             </div>
             </motion.div>
+            <div className='flex items-center justify-center'>
+              <Glicerina></Glicerina>
+          </div>
           </TabPanel>
 
 
@@ -914,8 +1043,11 @@ function Clean() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center'>{t("content.origin")}</h2>
             
-            <div className='flex justify-center'>
+            <div className='flex flex-col justify-center'>
               <img src={china} className='w-40 h-auto border-2 border-black' alt="China"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.china")}</h4>
+            </div>
             </div>
             </div>
             <div className='md:px-2 max-md:pt-5 border-[#0e1852]'>
@@ -926,6 +1058,9 @@ function Clean() {
             </div>
             </div>
             </motion.div>
+            <div className='flex items-center justify-center'>
+              <Metasilicato></Metasilicato>
+          </div>
 
           </TabPanel>
 
@@ -969,8 +1104,11 @@ function Clean() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center  text-lg font-semibold'>{t("content.origin")}</h2>
             
-            <div className='flex justify-center'>
-              <img src={vzla} className='w-40 h-auto border-2 border-black' alt="Tambor"/>
+            <div className='flex flex-col justify-center'>
+              <img src={vzla} className='w-40 h-auto border-2 border-black' alt="Venezuela"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.vzla")}</h4>
+            </div>
             </div>
             </div>
             <div className='md:px-2 max-md:pt-5 border-[#0e1852]'>
@@ -981,6 +1119,9 @@ function Clean() {
             </div>
             </div>
             </motion.div>
+            <div className='flex items-center justify-center'>
+              <Nicidexiolina></Nicidexiolina>
+          </div>
 
           </TabPanel>
 
@@ -1023,7 +1164,13 @@ function Clean() {
             
             <div className='flex flex-col gap-3 justify-center items-center'>
               <img src={rusia} className='w-40 h-auto border-2 border-black' alt="Rusia"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.rusia")}</h4>
+            </div>
               <img src={brasil} className='w-40 h-auto border-2 border-black' alt="Brasil"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.brasil")}</h4>
+            </div>
             </div>
             </div>
             <div className='md:px-2 max-md:pt-5 border-[#0e1852]'>
@@ -1034,6 +1181,9 @@ function Clean() {
             </div>
             </div>
             </motion.div>
+            <div className='flex items-center justify-center'>
+              <Nonifenol></Nonifenol>
+          </div>
 
           </TabPanel>
 
@@ -1089,7 +1239,13 @@ function Clean() {
             
             <div className='flex flex-col gap-3 justify-center items-center'>
               <img src={corea} className='w-40 h-auto border-2 border-black' alt="Corea"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.corea")}</h4>
+            </div>
               <img src={brasil} className='w-40 h-auto border-2 border-black' alt="Brasil"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.brasil")}</h4>
+            </div>
             </div>
             </div>
             <div className=' md:px-2 max-md:pt-5 border-[#0e1852]'>
@@ -1100,6 +1256,9 @@ function Clean() {
             </div>
             </div>
             </motion.div>
+            <div className='flex items-center justify-center'>
+              <Peroxido></Peroxido>
+          </div>
           </TabPanel>
 
 
@@ -1151,8 +1310,17 @@ function Clean() {
             
             <div className='flex flex-col gap-3 justify-center items-center'>
               <img src={corea} className='w-40 h-auto border-2 border-black' alt="Corea"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.corea")}</h4>
+            </div>
               <img src={china} className='w-40 h-auto border-2 border-black' alt="China"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.china")}</h4>
+            </div>
               <img src={alemania} className='w-40 h-auto border-2 border-black' alt="Alemania"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.alemania")}</h4>
+            </div>
             </div>
             </div>
             <div className='md:px-2 max-md:pt-5 border-[#0e1852]'>
@@ -1163,6 +1331,9 @@ function Clean() {
             </div>
             </div>
             </motion.div>
+            <div className='flex items-center justify-center'>
+              <Sles></Sles>
+          </div>
 
           </TabPanel>
 
@@ -1216,10 +1387,25 @@ function Clean() {
             
             <div className='flex flex-col gap-3 justify-center items-center'>
               <img src={india} className='w-40 h-auto border-2 border-black' alt="India"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.india")}</h4>
+            </div>
               <img src={peru} className='w-40 h-auto border-2 border-black' alt="Peru"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.peru")}</h4>
+            </div>
               <img src={china} className='w-40 h-auto border-2 border-black' alt="china"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.china")}</h4>
+            </div>
               <img src={newAfrica} className='w-40 h-auto border-2 border-black' alt="Nueva Africa"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.africa")}</h4>
+            </div>
               <img src={emiratosArabes} className='w-40 h-auto border-2 border-black' alt="Emiratos Arabes"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.emiratos")}</h4>
+            </div>
             </div>
             </div>
             <div className='md:px-2 max-md:pt-5 border-[#0e1852]'>
@@ -1271,6 +1457,9 @@ function Clean() {
             
             <div className='flex flex-col gap-3 justify-center items-center'>
               <img src={polonia} className='w-40 h-auto border-2 border-black' alt="Polonia"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.polonia")}</h4>
+            </div>
               <h2>{t("content.fabric")}</h2>
               <img src={fabricante} className='w-40 h-auto' alt="Fabricante"/>
             </div>
@@ -1331,8 +1520,13 @@ function Clean() {
             
             <div className='flex flex-col gap-3 justify-center items-center'>
               <img src={india} className='w-40 h-auto border-2 border-black' alt="India"/>
-              <img src={vzla} className='w-40 h-auto border-2 border-black' alt="Peru"/>
-
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.india")}</h4>
+            </div>
+              <img src={vzla} className='w-40 h-auto border-2 border-black' alt="Venezuela"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.vzla")}</h4>
+            </div>
             </div>
             </div>
             <div className='md:px-2 max-md:pt-5 border-[#0e1852]'>
@@ -1344,6 +1538,9 @@ function Clean() {
             </div>
             </div>
             </motion.div>
+            <div className='flex items-center justify-center'>
+              <SodaCaustica></SodaCaustica>
+          </div>
           
           </TabPanel>
 
@@ -1388,6 +1585,9 @@ function Clean() {
             
             <div className='flex flex-col gap-3 justify-center items-center pb-4'>
               <img src={alemania} className='w-40 h-auto border-2 border-black' alt="Alemania"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.alemania")}</h4>
+            </div>
               <h2>{t("content.fabric")}</h2>
               <img src={fabricante2} className='w-40 h-auto border-2 border-black ' alt="Fabricante"/>
             </div>
@@ -1400,6 +1600,9 @@ function Clean() {
             </div>
             </div>
           </motion.div>
+          <div className='flex items-center justify-center'>
+              <Sles></Sles>
+          </div>
 
           </TabPanel>
 
@@ -1449,7 +1652,13 @@ function Clean() {
             
             <div className='flex flex-col gap-3 justify-center items-center'>
               <img src={rusia} className='w-40 h-auto border-2 border-black' alt="Rusia"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.rusia")}</h4>
+            </div>
               <img src={vzla} className='w-40 h-auto border-2 border-black' alt="Venezuela"/>
+              <div className='flex justify-center'>
+              <h4 className='font-bold'>{t("flags.vzla")}</h4>
+            </div>
             </div>
             </div>
             <div className='md:px-2 max-md:pt-5 border-[#0e1852]'>
@@ -1460,6 +1669,9 @@ function Clean() {
             </div>
             </div>
             </motion.div>
+            <div className='flex items-center justify-center'>
+              <Tripolifosfato></Tripolifosfato>
+          </div>
 
           </TabPanel>
 

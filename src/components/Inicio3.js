@@ -1,5 +1,5 @@
 import React from 'react';
-import imgCamion from "../Imagenes/camion.jpg";
+import imgCamion from "../Imagenes/cargando.jpg";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 import { useTranslation } from "react-i18next";
@@ -28,9 +28,9 @@ function Section({ children }) {
           transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
         }} ref={ref}>
           {children}
-        <h2 className='md:text-4xl text-2xl text-center border-b-2 border-[#00c08d] mx-4'>{t("home.subtitle2")}</h2>
+          <h2 className='md:text-4xl text-2xl text-center border-b-2 border-[#00c08d] mx-4'>{t("home.subtitle2")}</h2>
         </div>
-        <div className='self-center flex justify-center bg-gray-300 bg-opacity-40 backdrop-blur-md text-[#0e1852] w-auto max-w-[30rem] md:max-h-52 md:h-auto md:py-5 h-20 place-items-center content-center'style={{
+        <div className='self-center flex justify-center place-items-center bg-gray-300 bg-opacity-40 backdrop-blur-md text-[#0e1852] w-auto max-w-[30rem] md:max-h-52 md:h-auto md:py-5 h-20 content-center'style={{
           transform: isInView2 ? "none" : "translateX(-200px)",
           opacity: isInView2 ? 1 : 0,
           transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
@@ -38,7 +38,7 @@ function Section({ children }) {
           {children}
           <h3 className='md:text-4xl text-2xl text-center border-b-2 border-[#00c08d]  mx-4'>{t("home.miniSubtitle4")}</h3>
         </div>
-        <div className='self-center flex justify-center place-items-center col-start-3 bg-gray-300 bg-opacity-40 backdrop-blur-md text-[#0e1852] w-auto max-w-[30rem] md:max-h-40 md:h-auto md:py-5 h-20 md:mt-[20rem] content-center'style={{
+        <div className='self-center max-xl:-ml-40 flex justify-center col-start-3 bg-gray-300 bg-opacity-40 backdrop-blur-md text-[#0e1852] w-auto max-w-[30rem] md:max-h-40 md:h-auto md:py-5 h-20 md:mt-[20rem] place-items-center content-center'style={{
           transform: isInView3 ? "none" : "translateY(200px)",
           opacity: isInView3 ? 1 : 0,
           transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"

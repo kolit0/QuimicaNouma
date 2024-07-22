@@ -2,6 +2,9 @@
     "navbar": {
         "btn": "Contact Us"
     },
+    "download": {
+        "btn": "Download Safety Sheet" 
+    },
     "email": {
         "send": "Email Sent"
     },
@@ -22,7 +25,7 @@
         "food": "Food & Drinks"
     },
     "home": {
-        "title": "DEDICATED TO THE RAW MATERIAL",
+        "title": "QUALITY RAW MATERIAL",
         "text": "Dedicated to the Import, storage and distribution of raw materials for various sectors (Food, paints, cosmetics, cleaning and industrial) at a national level.",
         "subtitle": "ABOUT US",
         "miniSubtitle": "Merchandise insurance",
@@ -144,6 +147,30 @@
         "tripolifosfatoAli": "Sodium tripolyphosphate (Alimentary Grade)",
         "tripolifosfatoTec": "Sodium tripolyphosphate (Technical Grade)",
         "xileno": "Xylene"
+    },
+    "flags": {
+        "china": "China",
+        "brasil": "Brazil",
+        "usa": "USA",
+        "vietnam": "Vietnam",
+        "vzla": "Venezuela",
+        "tailandia": "Thailand",
+        "polonia": "Poland",
+        "india": "India",
+        "alemania": "Germany",
+        "corea": "South Korea",
+        "kazajistan": "Kazakhstan",
+        "malasia": "Malasya",
+        "arg": "Argentina",
+        "peru": "Peru",
+        "rusia": "Russia",
+        "indonesia": "Indonesia",
+        "colombia": "Colombia",
+        "noruega": "Norway",
+        "qatar": "Qatar",
+        "paises": "Netherlands",
+        "africa": "New Africa",
+        "emiratos": "Arab Emirates"
     },
     "content": {
         "present": "Presentation:",
