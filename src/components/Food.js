@@ -1,25 +1,53 @@
 import React from 'react';
 import Acetico from "./Botones-Descarga/Acetico";
+import Acetico2 from "./DescargaFicha/AcidoAcetico";
 import AcidoCitrico from "./Botones-Descarga/AcidoCitrico";
+import AcidoCitrico2 from "./DescargaFicha/AcidoCitrico";
 import Fosforico from "./Botones-Descarga/Fosforico";
+import Fosforico2 from "./DescargaFicha/AcidoFosforico";
+import Albumina from "./DescargaFicha/Albumina";
 import Yuca from "./Botones-Descarga/Yuca";
+import Yuca2 from "./DescargaFicha/AlmidonYuca";
 import Papa from "./Botones-Descarga/Papa";
+import Papa2 from "./DescargaFicha/AlmidonPapa";
+import Maiz from "./DescargaFicha/AlmidonMaiz";
 import BenzoatoSodio from "./Botones-Descarga/BenzoatoSodio";
+import BenzoatoSodio2 from "./DescargaFicha/Benzoato";
 import Cmc from "./Botones-Descarga/Cmc";
+import Cmc2 from "./DescargaFicha/Cmc";
 import Carragenato from "./Botones-Descarga/Carragenato";
+import Carragenato2 from "./DescargaFicha/Carragenato";
 import CitratoSodio from "./Botones-Descarga/CitratoSodio";
+import CitratoSodio2 from "./DescargaFicha/CitratoSodio";
 import CloruroCal from "./Botones-Descarga/CloruroCal";
+import CloruroCal2 from "./DescargaFicha/CloruroCal";
 import Dextrosa from "./Botones-Descarga/Dextrosa";
+import Dextrosa2 from "./DescargaFicha/Dextrosa";
+import Edta from "./DescargaFicha/Edta";
 import Eritorbato from "./Botones-Descarga/Eritorbato";
+import Eritorbato2 from "./DescargaFicha/Eritorbato";
+import Gelatina from "./DescargaFicha/Gelatina";
 import Glutamato from "./Botones-Descarga/Glutamato";
+import Glutamato2 from "./DescargaFicha/Glutamato";
 import GomaGuar from "./Botones-Descarga/GomGuar";
+import GomaGuar2 from "./DescargaFicha/GomaGuar";
 import GomaXan from "./Botones-Descarga/GomaXan";
+import GomaXan2 from "./DescargaFicha/GomaXan";
+import GomaXan80 from "./DescargaFicha/GomaXan80";
+import GomaXan200 from "./DescargaFicha/GomaXan200";
 import Metabisulfato from "./Botones-Descarga/Metabisulfato";
+import Metabisulfito from "./DescargaFicha/Metabisulfito"
 import Propianato from "./Botones-Descarga/Propianato";
+import Propianato2 from "./DescargaFicha/Propionato";
 import ProteinaSoya from "./Botones-Descarga/ProteinaSoya";
+import ProteinaSoya2 from "./DescargaFicha/ProteinaSoya";
 import Sorbato from "./Botones-Descarga/Sorbato";
+import Sorbato2 from "./DescargaFicha/Sorbato";
 import Tripolifosfato from "./Botones-Descarga/Tripolifosfato";
+import Tripolifosfato2 from "./DescargaFicha/TripolifosfatoAlimento";
 import Propil from "./Botones-Descarga/Propil";
+import PropilChina from "./DescargaFicha/PropilenChina";
+import PropilCorea from "./DescargaFicha/PropilenCorea";
 import imgTambor from "../Imagenes/Productos/Tambor.png";
 import imgCarboya from "../Imagenes/Productos/Carboya.png";
 import imgIbc from "../Imagenes/Productos/IBC.png";
@@ -333,7 +361,7 @@ function Food() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center text-lg font-semibold'>{t("content.origin")}</h2>
             
-            <div className='flex flex-col justify-center'>
+            <div className='flex flex-col justify-center items-center'>
               <img src={china} className='w-40 h-auto border-2 border-black' alt="Tambor"/>
               <div className='flex justify-center'>
               <h4 className='font-bold'>{t("flags.china")}</h4>
@@ -348,8 +376,9 @@ function Food() {
             </div>
             </div>
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <Acetico></Acetico>
+              <Acetico2></Acetico2>
           </div>
           </TabPanel>
 
@@ -408,8 +437,9 @@ function Food() {
             </div>
             </div>
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <AcidoCitrico></AcidoCitrico>
+              <AcidoCitrico2></AcidoCitrico2>
           </div>
           </TabPanel>
 
@@ -484,8 +514,9 @@ function Food() {
             </div>
             </div>
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <Fosforico></Fosforico>
+              <Fosforico2></Fosforico2>
           </div>
           </TabPanel>
 
@@ -542,6 +573,9 @@ function Food() {
             </div>
             </div>
           </motion.div>
+          <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
+              <Albumina></Albumina>
+          </div>
           </TabPanel>
 
 
@@ -599,6 +633,9 @@ function Food() {
               </div>
               </div>
             </motion.div>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3 pb-5'>
+              <Maiz></Maiz>
+          </div>
 
             <motion.div className={`flex justify-center flex-col  border-t-4 border-[#0e1852]`}
             initial={{ y: -250, opacity: 0 }}
@@ -650,6 +687,9 @@ function Food() {
             </div>
             </div>
             </motion.div>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3 pb-5'>
+              <Maiz></Maiz>
+          </div>
 
             <motion.div className={`flex justify-center flex-col  border-t-4 border-[#0e1852]`}
             initial={{ y: -250, opacity: 0 }}
@@ -700,8 +740,9 @@ function Food() {
             </div>
             </div>
             </div>
-            <div className='flex items-center justify-center pb-3'>
+            <div className='flex items-center justify-center pb-3 md:flex-row flex-col gap-3'>
               <Yuca></Yuca>
+              <Yuca2></Yuca2>
           </div>
             </motion.div>
             
@@ -756,8 +797,9 @@ function Food() {
             </div>
             </div>
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <Papa></Papa>
+              <Papa2></Papa2>
           </div>
           </TabPanel>
 
@@ -811,8 +853,9 @@ function Food() {
             </div>
             </div>
           </motion.div>
-          <div className='flex items-center justify-center'>
+          <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <BenzoatoSodio></BenzoatoSodio>
+              <BenzoatoSodio2></BenzoatoSodio2>
           </div>
         </TabPanel>
 
@@ -868,8 +911,9 @@ function Food() {
             </div>
             
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <Cmc></Cmc>
+              <Cmc2></Cmc2>
           </div>
         </TabPanel>
 
@@ -927,8 +971,9 @@ function Food() {
             </div>
             </div>
           </motion.div>
-          <div className='flex items-center justify-center'>
+          <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <Carragenato></Carragenato>
+              <Carragenato2></Carragenato2>
           </div>
         </TabPanel>
 
@@ -985,8 +1030,9 @@ function Food() {
             </div>
             </div>
           </motion.div>
-          <div className='flex items-center justify-center'>
+          <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <CitratoSodio></CitratoSodio>
+              <CitratoSodio2></CitratoSodio2>
           </div>
         </TabPanel>
 
@@ -1045,8 +1091,9 @@ function Food() {
             </div>
             </div>
           </motion.div>
-          <div className='flex items-center justify-center'>
+          <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <CloruroCal></CloruroCal>
+              <CloruroCal2></CloruroCal2>
           </div>
         </TabPanel>
 
@@ -1090,7 +1137,7 @@ function Food() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center text-lg font-semibold'>{t("content.origin")}</h2>
             
-            <div className='flex flex-col justify-center'>
+            <div className='flex flex-col justify-center items-center'>
               <img src={china} className='w-40 h-auto border-2 border-black' alt="China"/>
               <div className='flex justify-center'>
               <h4 className='font-bold'>{t("flags.china")}</h4>
@@ -1106,8 +1153,9 @@ function Food() {
             </div>
             
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <Dextrosa></Dextrosa>
+              <Dextrosa2></Dextrosa2>
           </div>
         </TabPanel>
 
@@ -1151,7 +1199,7 @@ function Food() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center text-lg font-semibold'>{t("content.origin")}</h2>
             
-            <div className='flex flex-col justify-center'>
+            <div className='flex flex-col justify-center items-center'>
               <img src={china} className='w-40 h-auto border-2 border-black' alt="China"/>
               <div className='flex justify-center'>
               <h4 className='font-bold'>{t("flags.china")}</h4>
@@ -1167,6 +1215,9 @@ function Food() {
             </div>
             
             </motion.div>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
+              <Edta></Edta>
+          </div>
         </TabPanel>
 
 
@@ -1206,7 +1257,7 @@ function Food() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center text-lg font-semibold'>{t("content.origin")}</h2>
             
-            <div className='flex flex-col justify-center'>
+            <div className='flex flex-col justify-center items-center'>
               <img src={china} className='w-40 h-auto border-2 border-black' alt="China"/>
               <div className='flex justify-center'>
               <h4 className='font-bold'>{t("flags.china")}</h4>
@@ -1222,8 +1273,9 @@ function Food() {
             </div>
             
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <Eritorbato></Eritorbato>
+              <Eritorbato2></Eritorbato2>
           </div>
         </TabPanel>
 
@@ -1270,7 +1322,7 @@ function Food() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center text-lg font-semibold'>{t("content.origin")}</h2>
             
-            <div className='flex flex-col justify-center'>
+            <div className='flex flex-col justify-center items-center'>
               <img src={china} className='w-40 h-auto border-2 border-black' alt="China"/>
               <div className='flex justify-center'>
               <h4 className='font-bold'>{t("flags.china")}</h4>
@@ -1286,6 +1338,9 @@ function Food() {
             </div>
             
             </motion.div>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
+              <Gelatina></Gelatina>
+          </div>
         </TabPanel>
 
 
@@ -1329,7 +1384,7 @@ function Food() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center text-lg font-semibold'>{t("content.origin")}</h2>
             
-            <div className='flex flex-col justify-center'>
+            <div className='flex flex-col justify-center items-center'>
               <img src={china} className='w-40 h-auto border-2 border-black' alt="China"/>
               <div className='flex justify-center'>
               <h4 className='font-bold'>{t("flags.china")}</h4>
@@ -1345,8 +1400,9 @@ function Food() {
             </div>
             
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <Glutamato></Glutamato>
+              <Glutamato2></Glutamato2>
           </div>
           </TabPanel>
 
@@ -1391,7 +1447,7 @@ function Food() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center text-lg font-semibold'>{t("content.origin")}</h2>
             
-            <div className='flex flex-col justify-center'>
+            <div className='flex flex-col justify-center items-center'>
               <img src={china} className='w-40 h-auto border-2 border-black' alt="China"/>
               <div className='flex justify-center'>
               <h4 className='font-bold'>{t("flags.china")}</h4>
@@ -1407,8 +1463,9 @@ function Food() {
             </div>
             
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <GomaGuar></GomaGuar>
+              <GomaGuar2></GomaGuar2>
           </div>
           </TabPanel>
 
@@ -1470,8 +1527,11 @@ function Food() {
             </div>
             
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <GomaXan></GomaXan>
+              <GomaXan2></GomaXan2>
+              <GomaXan80></GomaXan80>
+              <GomaXan200></GomaXan200>
           </div>
         </TabPanel>
 
@@ -1530,8 +1590,9 @@ function Food() {
             </div>
             </div>
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <Metabisulfato></Metabisulfato>
+              <Metabisulfito></Metabisulfito>
           </div>
         </TabPanel>
 
@@ -1574,7 +1635,7 @@ function Food() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center text-lg font-semibold'>{t("content.origin")}</h2>
             
-            <div className='flex flex-col justify-center'>
+            <div className='flex flex-col justify-center items-center'>
               <img src={china} className='w-40 h-auto border-2 border-black' alt="China"/>
               <div className='flex justify-center'>
               <h4 className='font-bold'>{t("flags.china")}</h4>
@@ -1590,8 +1651,9 @@ function Food() {
             </div>
             
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <Propianato></Propianato>
+              <Propianato2></Propianato2>
           </div>
         </TabPanel>
 
@@ -1660,8 +1722,10 @@ function Food() {
             </div>
             </div>
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <Propil></Propil>
+              <PropilChina></PropilChina>
+              <PropilCorea></PropilCorea>
           </div>
         </TabPanel>
 
@@ -1709,7 +1773,7 @@ function Food() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center text-lg font-semibold'>{t("content.origin")}</h2>
             
-            <div className='flex flex-col justify-center'>
+            <div className='flex flex-col justify-center items-center'>
               <img src={china} className='w-40 h-auto border-2 border-black' alt="China"/>
               <div className='flex justify-center'>
               <h4 className='font-bold'>{t("flags.china")}</h4>
@@ -1725,8 +1789,9 @@ function Food() {
             </div>
             
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <ProteinaSoya></ProteinaSoya>
+              <ProteinaSoya2></ProteinaSoya2>
           </div>
         </TabPanel>
 
@@ -1772,7 +1837,7 @@ function Food() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center text-lg font-semibold'>{t("content.origin")}</h2>
             
-            <div className='flex flex-col justify-center'>
+            <div className='flex flex-col justify-center items-center'>
               <img src={china} className='w-40 h-auto border-2 border-black' alt="China"/>
               <div className='flex justify-center'>
               <h4 className='font-bold'>{t("flags.china")}</h4>
@@ -1788,8 +1853,9 @@ function Food() {
             </div>
             
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <Sorbato></Sorbato>
+              <Sorbato2></Sorbato2>
           </div>
         </TabPanel>
 
@@ -1847,8 +1913,9 @@ function Food() {
             </div>
             
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <Tripolifosfato></Tripolifosfato>
+              <Tripolifosfato2></Tripolifosfato2>
           </div>
           </TabPanel>
 

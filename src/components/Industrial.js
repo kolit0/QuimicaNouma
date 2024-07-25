@@ -1,19 +1,39 @@
 import React from 'react';
 import AceiteMin from './Botones-Descarga/AceiteMineral';
+import AceiteMineral from './DescargaFicha/AceiteMin';
 import AcetatoN from "./Botones-Descarga/AcetatoN";
+import AcetatoN2 from "./DescargaFicha/AcetatoN";
 import Acetico from "./Botones-Descarga/Acetico";
+import AceticoN2 from "./DescargaFicha/AcidoAcetico";
 import Sulfonico from "./Botones-Descarga/Sulfonico";
+import SulfonicoCol from "./DescargaFicha/SulfonicoCol";
+import SulfonicoCorea from "./DescargaFicha/SulfonicoCorea";
+import SulfonicoQatar from "./DescargaFicha/SulfonicoQatar";
 import Isopropilico from "./Botones-Descarga/Isopropilico";
+import IsopropilicoChina from "./DescargaFicha/IsopropilicoChina";
+import IsopropilicoHolanda from "./DescargaFicha/IsopropilicoHol";
 import Butildiglicol from "./Botones-Descarga/Butildiglicol";
+import Butildiglicol2 from "./DescargaFicha/Diglicol";
 import Butilglicol from "./Botones-Descarga/Butilglicol";
+import Butilglicol2 from "./DescargaFicha/Butilglicol";
 import CloruroMet from "./Botones-Descarga/CloruroMet";
+import CloruroMet2 from "./DescargaFicha/CloruroMet"
 import Dietilenglicol from "./Botones-Descarga/Dietilenglicol";
+import Dietilenglicol2 from "./DescargaFicha/Dietilenglicol";
 import HidroxidoPot from "./Botones-Descarga/HidroxidoPot";
+import HidroxidoPot2 from "./DescargaFicha/HidroxidoPot";
 import Monoetlineglicol from "./Botones-Descarga/Monoetilenglicol";
 import Paraformalehido from "./Botones-Descarga/Paraformalehido";
+import Paraformalehido2 from "./DescargaFicha/Paraforma";
+import Polietilno from "./DescargaFicha/Polietileno";
 import SodaCaustica from "./Botones-Descarga/SodaCaustica";
+import SodaEscamas from "./DescargaFicha/SodaEscamas";
+import SodaLiquida from "./DescargaFicha/SodaLiquida";
+import SodaRokita from "./DescargaFicha/SodaRokita";
 import SulfatoAlu from "./Botones-Descarga/SulfatoAlu";
+import SulfatoAlu2 from "./DescargaFicha/SulfatoAluminio";
 import Xileno from "./Botones-Descarga/Xileno";
+import Xileno2 from "./DescargaFicha/Xileno";
 import imgTambor from "../Imagenes/Productos/Tambor.png";
 import imgTambor2 from "../Imagenes/Productos/Tambor2.png";
 import imgTamborVerde from "../Imagenes/Productos/TamborVerde.png";
@@ -261,7 +281,7 @@ function Industrial() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center'>{t("content.origin")}</h2>
             
-            <div className='flex flex-col justify-center'>
+            <div className='flex flex-col justify-center items-center'>
               <img src={india} className='w-40 h-auto border-2 border-black' alt="India"/>
               <div className='flex justify-center'>
               <h4 className='font-bold'>{t("flags.india")}</h4>
@@ -276,8 +296,9 @@ function Industrial() {
             </div>
             </div>
           </motion.div>
-          <div className='flex items-center justify-center'>
+          <div className='flex md:flex-row flex-col gap-3 items-center justify-center'>
               <AceiteMin></AceiteMin>
+              <AceiteMineral></AceiteMineral>
           </div>
           </TabPanel>
 
@@ -321,7 +342,7 @@ function Industrial() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center'>{t("content.origin")}</h2>
             
-            <div className='flex flex-col justify-center'>
+            <div className='flex flex-col justify-center items-center'>
               <img src={china} className='w-40 h-auto border-2 border-black' alt="China"/>
               <div className='flex justify-center'>
               <h4 className='font-bold'>{t("flags.china")}</h4>
@@ -336,8 +357,9 @@ function Industrial() {
             </div>
             </div>
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3 '>
               <AcetatoN></AcetatoN>
+              <AcetatoN2></AcetatoN2>
           </div>
           </TabPanel>
 
@@ -386,7 +408,7 @@ function Industrial() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center text-lg font-semibold'>{t("content.origin")}</h2>
             
-            <div className='flex flex-col justify-center'>
+            <div className='flex flex-col justify-center items-center'>
               <img src={china} className='w-40 h-auto border-2 border-black' alt="China"/>
               <div className='flex justify-center'>
               <h4 className='font-bold'>{t("flags.china")}</h4>
@@ -401,8 +423,9 @@ function Industrial() {
             </div>
             </div>
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3 '>
               <Acetico></Acetico>
+              <AceticoN2></AceticoN2>
           </div>
           </TabPanel>
 
@@ -489,8 +512,11 @@ function Industrial() {
             </div>
             </div>
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3 '>
               <Sulfonico></Sulfonico>
+              <SulfonicoCol></SulfonicoCol>
+              <SulfonicoCorea></SulfonicoCorea>
+              <SulfonicoQatar></SulfonicoQatar>
           </div>
           </TabPanel>
 
@@ -555,8 +581,10 @@ function Industrial() {
             </div>
             </div>
           </motion.div>
-          <div className='flex items-center justify-center'>
+          <div className='flex items-center justify-center md:flex-row flex-col gap-3 '>
               <Isopropilico></Isopropilico>
+              <IsopropilicoChina></IsopropilicoChina>
+              <IsopropilicoHolanda></IsopropilicoHolanda>
           </div>
           </TabPanel>
 
@@ -596,7 +624,7 @@ function Industrial() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center'>{t("content.origin")}</h2>
             
-            <div className='flex flex-col justify-center'>
+            <div className='flex flex-col justify-center items-center'>
               <img src={china} className='w-40 h-auto border-2 border-black' alt="China"/>
               <div className='flex justify-center'>
               <h4 className='font-bold'>{t("flags.china")}</h4>
@@ -611,8 +639,9 @@ function Industrial() {
             </div>
             </div>
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3 '>
               <Butildiglicol></Butildiglicol>
+              <Butildiglicol2></Butildiglicol2>
           </div>
           </TabPanel>
 
@@ -676,8 +705,9 @@ function Industrial() {
             </div>
             </div>
           </motion.div>
-          <div className='flex items-center justify-center'>
+          <div className='flex items-center justify-center md:flex-row flex-col gap-3 '>
               <Butilglicol></Butilglicol>
+              <Butilglicol2></Butilglicol2>
           </div>
           </TabPanel>
 
@@ -739,8 +769,9 @@ function Industrial() {
             </div>
             </div>
           </motion.div>
-          <div className='flex items-center justify-center'>
+          <div className='flex items-center justify-center md:flex-row flex-col gap-3 '>
               <CloruroMet></CloruroMet>
+              <CloruroMet2></CloruroMet2>
           </div>
           </TabPanel>
 
@@ -789,10 +820,10 @@ function Industrial() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center'>{t("content.origin")}</h2>
             
-            <div className='flex flex-col justify-center'>
+            <div className='flex flex-col justify-center items-center'>
               <img src={paisesBajos} className='w-40 h-auto border-2 border-black' alt="Paises Bajos"/>
               <div className='flex justify-center'>
-              <h4 className='font-bold'>{t("flags.china")}</h4>
+              <h4 className='font-bold'>{t("flags.paises")}</h4>
             </div>
             </div>
             </div>
@@ -804,8 +835,9 @@ function Industrial() {
             </div>
             </div>
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3 '>
               <Dietilenglicol></Dietilenglicol>
+              <Dietilenglicol2></Dietilenglicol2>
           </div>
 
           </TabPanel>
@@ -849,7 +881,7 @@ function Industrial() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center'>{t("content.origin")}</h2>
             
-            <div className='flex  flex-col justify-center'>
+            <div className='flex  flex-col justify-center items-center'>
               <img src={rusia} className='w-40 h-auto border-2 border-black' alt="Rusia"/>
               <div className='flex justify-center'>
               <h4 className='font-bold'>{t("flags.rusia")}</h4>
@@ -864,8 +896,9 @@ function Industrial() {
             </div>
             </div>
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3 '>
               <HidroxidoPot></HidroxidoPot>
+              <HidroxidoPot2></HidroxidoPot2>
           </div>
 
           </TabPanel>
@@ -984,7 +1017,7 @@ function Industrial() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center'>{t("content.origin")}</h2>
             
-            <div className='flex flex-col justify-center'>
+            <div className='flex flex-col justify-center items-center'>
               <img src={china} className='w-40 h-auto border-2 border-black' alt="China"/>
               <div className='flex justify-center'>
               <h4 className='font-bold'>{t("flags.china")}</h4>
@@ -999,8 +1032,9 @@ function Industrial() {
             </div>
             </div>
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3 '>
               <Paraformalehido></Paraformalehido>
+              <Paraformalehido2></Paraformalehido2>
           </div>
 
           </TabPanel>
@@ -1044,7 +1078,7 @@ function Industrial() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center'>{t("content.origin")}</h2>
             
-            <div className='flex flex-col justify-center'>
+            <div className='flex flex-col justify-center items-center'>
               <img src={usa} className='w-40 h-auto border-2 border-black' alt="USA"/>
               <div className='flex justify-center'>
               <h4 className='font-bold'>{t("flags.usa")}</h4>
@@ -1059,6 +1093,9 @@ function Industrial() {
             </div>
             </div>
             </motion.div>
+            <div className='flex items-center justify-center'>
+              <Polietilno></Polietilno>
+            </div>
 
           </TabPanel>
 
@@ -1141,6 +1178,9 @@ function Industrial() {
             </div>
             </div>
             </motion.div>
+            <div className='flex items-center justify-center pb-7'>
+              <SodaEscamas></SodaEscamas>
+            </div>
 
             <motion.div className={`flex justify-center flex-col   border-[#0e1852] font-semibold text-lg`}
             initial={{ y: -250, opacity: 0 }}
@@ -1197,6 +1237,9 @@ function Industrial() {
             </div>
             </div>
             </motion.div>
+            <div className='flex items-center justify-center pb-7'>
+              <SodaRokita></SodaRokita>
+            </div>
 
 
             <motion.div className={`flex justify-center flex-col  border-[#0e1852] font-semibold text-lg`}
@@ -1263,6 +1306,9 @@ function Industrial() {
             </div>
             </div>
             </motion.div>
+            <div className='flex items-center justify-center pb-2'>
+              <SodaLiquida></SodaLiquida>
+            </div>
             <div className='flex items-center justify-center'>
               <SodaCaustica></SodaCaustica>
           </div>
@@ -1308,7 +1354,7 @@ function Industrial() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center'>{t("content.origin")}</h2>
             
-            <div className='flex flex-col justify-center'>
+            <div className='flex flex-col justify-center items-center'>
               <img src={vzla} className='w-40 h-auto border-2 border-black' alt="Venezuela"/>
               <div className='flex justify-center'>
               <h4 className='font-bold'>{t("flags.vzla")}</h4>
@@ -1323,8 +1369,9 @@ function Industrial() {
             </div>
             </div>
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3 '>
               <SulfatoAlu></SulfatoAlu>
+              <SulfatoAlu2></SulfatoAlu2>
           </div>
 
           </TabPanel>
@@ -1436,7 +1483,7 @@ function Industrial() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center'>{t("content.origin")}</h2>
             
-            <div className='flex flex-col justify-center'>
+            <div className='flex flex-col justify-center items-center'>
               <img src={paisesBajos} className='w-40 h-auto border-2 border-black' alt="Paises Bajos"/>
               <div className='flex justify-center'>
               <h4 className='font-bold'>{t("flags.paises")}</h4>
@@ -1451,8 +1498,9 @@ function Industrial() {
             </div>
             </div>
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3 '>
               <Xileno></Xileno>
+              <Xileno2></Xileno2>
           </div>
 
           </TabPanel>

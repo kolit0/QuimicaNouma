@@ -3,7 +3,16 @@
         "btn": "Contáctanos"
     },
     "download": {
-        "btn": "Descargar Hoja de Seguridad"
+        "btn": "Descargar Hoja de Seguridad",
+        "data": "Descargar Ficha Técnica",
+        "dataAlemania" : "Descargar Ficha Técnica (Alemania)",
+        "dataChina" : "Descargar Ficha Técnica (China)",
+        "dataCorea": "Descargar Ficha Técnica (Corea)",
+        "dataGoma80": "Descargar Ficha Técnica (Goma 80)",
+        "dataGoma200": "Descargar Ficha Técnica (Goma 200)",
+        "dataHolanda": "Descargar Ficha Técnica (Holanda)",
+        "dataQatar": "Descargar Ficha Técnica (Qatar)",
+        "dataColombia": "Descargar Ficha Técnica (Colombia)"
     },
     "email": {
         "send": "Email Enviado"
@@ -381,6 +390,6 @@
         "agenteLimp": "Agente de limpieza, diluyente de pintura y en barnices"
     },
     "footer": {
-        "text": "© 2023 Nouma Trading & Logistics. J-41304784-5 Todos los Derechos Reservados."
+        "text": "© 2023 Quimica Nouma. J-41304784-5 Todos los Derechos Reservados."
     }
 }

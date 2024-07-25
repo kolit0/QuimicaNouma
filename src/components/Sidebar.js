@@ -23,7 +23,7 @@ export const Sidebar = ()=>{
       submenu2: true,
       subemnuItems2: [
         {title: "Grupo Nouma", href: "https://www.gruponouma.com"},
-        {title: "Nouma Trading & Logistics"},
+        {title: "Nouma Trading & Logistics", href: "https://noumatrading.com.ve"},
         {title: "Vencatalyst", href: "https://vencatalyst.com.ve"},
       ],
     },

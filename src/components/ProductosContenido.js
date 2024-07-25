@@ -39,7 +39,7 @@ function Productos () {
                 </a>
             </div>
         </div>
-        <div className='md:flex md:flex-row grid grid-cols-1 justify-between p-5 gap-5'>
+        <div className='md:flex md:flex-row grid grid-cols-1 justify-around p-5 gap-5'>
         <div className='w-auto h-auto flex flex-col p-5 gap-3 content-center items-center bg-gray-200 text-center'
         style={{
             transform: isInView ? "none" : "translateX(-200px)",

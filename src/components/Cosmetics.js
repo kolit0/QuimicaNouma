@@ -1,18 +1,34 @@
 import React, { useRef } from 'react';
 import AceiteMin from "./Botones-Descarga/AceiteMineral";
+import AceiteMin2 from "./DescargaFicha/AceiteMin";
 import Estearico from "./Botones-Descarga/Estearico";
+import Estearico2 from "./DescargaFicha/AcidoEstearico";
 import Cetilico from "./Botones-Descarga/Cetilico";
+import Cetilico2 from "./DescargaFicha/Cetilico";
 import Etilico from "./Botones-Descarga/Etilico";
 import ButilAcetato from "./Botones-Descarga/ButilAcetato";
+import ButilAcetato2 from "./DescargaFicha/ButilAcetato";
 import Carbomer from "./Botones-Descarga/Carbomer";
-import CloruroMet from "./Botones-Descarga/CloruroMet";
+import Carbomer2 from "./DescargaFicha/Carbomer";
+import CloruroCetri from "./Botones-Descarga/CloruroCetri";
 import Cocamida from "./Botones-Descarga/Cocamida";
+import Cocamida2 from "./DescargaFicha/Cocamida";
+import Cocamido from "./DescargaFicha/Cocamidopropil";
 import Colorantes from "./Botones-Descarga/Colorantes";
 import Glicerina from "./Botones-Descarga/Glicerina";
+import Glicerina2 from "./DescargaFicha/Glicerina";
 import Nicidexiolina from "./Botones-Descarga/Nipacidexiolina";
+import Nicidexiolina2 from "./DescargaFicha/Nipacidex";
 import Nonifenol from "./Botones-Descarga/Nonifenol";
+import Nonifenol2 from "./DescargaFicha/Nonil";
 import Propil from "./Botones-Descarga/Propil";
+import PropilChina from "./DescargaFicha/PropilenChina";
+import PropilCorea from "./DescargaFicha/PropilenCorea";
 import Sles from "./Botones-Descarga/Sles";
+import GenapolAlemania from "./DescargaFicha/GenapolAlemania";
+import GenapolChina from "./DescargaFicha/GenapolChina";
+import GenapolCorea from "./DescargaFicha/GenapolCorea";
+import Texapon from "./DescargaFicha/Texapon";
 import imgTambor from "../Imagenes/Productos/Tambor.png";
 import imgTambor2 from "../Imagenes/Productos/Tambor2.png";
 import imgTamborVerde from "../Imagenes/Productos/TamborVerde.png";
@@ -267,8 +283,8 @@ function Cosmetics() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center'>{t("content.origin")}</h2>
             
-            <div className='flex justify-center'>
-              <img src={india} className='w-40 h-auto border-2 border-black' alt="Tambor"/>
+            <div className='flex justify-center items-center'>
+              <img src={india} className='w-40 h-auto border-2 border-black' alt="India"/>
             </div>
             <div className='flex justify-center'>
               <h4>{t("flags.india")}</h4>
@@ -282,8 +298,9 @@ function Cosmetics() {
             </div>
             </div>
           </motion.div>
-          <div className='flex items-center justify-center'>
+          <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <AceiteMin></AceiteMin>
+              <AceiteMin2></AceiteMin2>
           </div>
 
           </TabPanel>
@@ -346,8 +363,9 @@ function Cosmetics() {
             </div>
             
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <Estearico></Estearico>
+              <Estearico2></Estearico2>
           </div>
           </TabPanel>
           
@@ -410,8 +428,9 @@ function Cosmetics() {
             </div>
             </div>
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <Cetilico></Cetilico>
+              <Cetilico2></Cetilico2>
           </div>
             
           </TabPanel>
@@ -474,7 +493,7 @@ function Cosmetics() {
             </div>
             </div>
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <Etilico></Etilico>
           </div>
 
@@ -520,7 +539,7 @@ function Cosmetics() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center'>{t("content.origin")}</h2>
             
-            <div className='flex flex-col justify-center'>
+            <div className='flex flex-col justify-center items-center'>
               <img src={china} className='w-40 h-auto border-2 border-black' alt="China"/>
               <div className='flex justify-center'>
               <h4>{t("flags.china")}</h4>
@@ -535,8 +554,9 @@ function Cosmetics() {
             </div>
             </div>
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <ButilAcetato></ButilAcetato>
+              <ButilAcetato2></ButilAcetato2>
           </div>
 
           </TabPanel>
@@ -598,8 +618,9 @@ function Cosmetics() {
             </div>
             </div>
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <Carbomer></Carbomer>
+              <Carbomer2></Carbomer2>
           </div>
 
           </TabPanel>
@@ -640,7 +661,7 @@ function Cosmetics() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center'>{t("content.origin")}</h2>
             
-            <div className='flex flex-col justify-center'>
+            <div className='flex flex-col justify-center items-center'>
               <img src={china} className='w-40 h-auto border-2 border-black' alt="China"/>
               <div className='flex justify-center'>
               <h4>{t("flags.china")}</h4>
@@ -655,8 +676,8 @@ function Cosmetics() {
             </div>
             </div>
             </motion.div>
-            <div className='flex items-center justify-center'>
-              <CloruroMet></CloruroMet>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
+              <CloruroCetri></CloruroCetri>
           </div>
 
           </TabPanel>
@@ -700,7 +721,7 @@ function Cosmetics() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center  text-lg font-semibold'>{t("content.origin")}</h2>
             
-            <div className='flex  flex-col justify-center'>
+            <div className='flex  flex-col justify-center items-center'>
               <img src={china} className='w-40 h-auto border-2 border-black' alt="China"/>
               <div className='flex justify-center'>
               <h4 className='font-bold'>{t("flags.china")}</h4>
@@ -715,8 +736,9 @@ function Cosmetics() {
             </div>
             </div>
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <Cocamida></Cocamida>
+              <Cocamida2></Cocamida2>
           </div>
 
           </TabPanel>
@@ -759,7 +781,7 @@ function Cosmetics() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center  text-lg font-semibold'>{t("content.origin")}</h2>
             
-            <div className='flex flex-col justify-center'>
+            <div className='flex flex-col justify-center items-center'>
               <img src={china} className='w-40 h-auto border-2 border-black' alt="China"/>
               <div className='flex justify-center'>
               <h4 className='font-bold'>{t("flags.china")}</h4>
@@ -774,6 +796,9 @@ function Cosmetics() {
             </div>
             </div>
             </motion.div>
+            <div className='flex md:flex-row flex-col gap-3 items-center justify-center'>
+              <Cocamido></Cocamido>
+          </div>
 
           </TabPanel>
 
@@ -814,7 +839,7 @@ function Cosmetics() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center  text-lg font-semibold'>{t("content.origin")}</h2>
             
-            <div className='flex flex-col justify-center'>
+            <div className='flex flex-col justify-center items-center'>
               <img src={usa} className='w-40 h-auto border-2 border-black' alt="USA"/>
               <div className='flex justify-center'>
               <h4 className='font-bold'>{t("flags.usa")}</h4>
@@ -829,7 +854,7 @@ function Cosmetics() {
             </div>
             </div>
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <Colorantes></Colorantes>
           </div>
 
@@ -908,8 +933,9 @@ function Cosmetics() {
             </div>
             </div>
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <Glicerina></Glicerina>
+              <Glicerina2></Glicerina2>
           </div>
           </TabPanel>
 
@@ -957,7 +983,7 @@ function Cosmetics() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center  text-lg font-semibold'>{t("content.origin")}</h2>
             
-            <div className='flex flex-col justify-center'>
+            <div className='flex flex-col justify-center items-center'>
               <img src={vzla} className='w-40 h-auto border-2 border-black' alt="Tambor"/>
               <div className='flex justify-center'>
               <h4 className='font-bold'>{t("flags.vzla")}</h4>
@@ -972,8 +998,9 @@ function Cosmetics() {
             </div>
             </div>
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <Nicidexiolina></Nicidexiolina>
+              <Nicidexiolina2></Nicidexiolina2>
           </div>
 
           </TabPanel>
@@ -1038,8 +1065,9 @@ function Cosmetics() {
             </div>
             </div>
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <Nonifenol></Nonifenol>
+              <Nonifenol2></Nonifenol2>
           </div>
 
           </TabPanel>
@@ -1104,8 +1132,10 @@ function Cosmetics() {
             </div>
             </div>
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <Propil></Propil>
+              <PropilChina></PropilChina>
+              <PropilCorea></PropilCorea>
           </div>
 
           </TabPanel>
@@ -1181,8 +1211,11 @@ function Cosmetics() {
             </div>
             </div>
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <Sles></Sles>
+              <GenapolAlemania></GenapolAlemania>
+              <GenapolChina></GenapolChina>
+              <GenapolCorea></GenapolCorea>
           </div>
 
           </TabPanel>
@@ -1245,8 +1278,9 @@ function Cosmetics() {
             </div>
             </div>
           </motion.div>
-          <div className='flex items-center justify-center'>
+          <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <Sles></Sles>
+              <Texapon></Texapon>
           </div>
 
           </TabPanel>

@@ -3,7 +3,16 @@
         "btn": "Contact Us"
     },
     "download": {
-        "btn": "Download Safety Sheet" 
+        "btn": "Download Safety Sheet" ,
+        "data":  "Download Data Sheet",
+        "dataAlemania" : "Download Data Sheet (Germany)",
+        "dataChina" : "Download Data Sheet (China)",
+        "dataCorea": "Download Data Sheet (Korea)",
+        "dataGoma80": "Download Data Sheet (Gum 80)",
+        "dataGoma200": "Download Data Sheet (Gum 200)",
+        "dataHolanda": "Download Data Sheet (Holland)",
+        "dataQatar": "Download Data Sheet (Qatar)",
+        "dataColombia": "Download Data Sheet (Colombia)"
     },
     "email": {
         "send": "Email Sent"

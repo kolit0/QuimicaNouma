@@ -38,7 +38,7 @@ function Section({ children }) {
           {children}
           <h3 className='md:text-4xl text-2xl text-center border-b-2 border-[#00c08d]  mx-4'>{t("home.miniSubtitle")}</h3>
         </div>
-        <div className='self-center max-lg:-ml-20 flex justify-center col-start-3 bg-gray-300 bg-opacity-40 backdrop-blur-md text-[#0e1852] w-auto max-w-[30rem] md:max-h-40 md:h-auto md:py-5 h-20 md:mt-[20rem] place-items-center content-center'style={{
+        <div className='self-center md:-ml-20 xl:ml-0 flex justify-center col-start-3 bg-gray-300 bg-opacity-40 backdrop-blur-md text-[#0e1852] w-auto max-w-[30rem] md:max-h-40 md:h-auto md:py-5 h-20 md:mt-[20rem] place-items-center content-center'style={{
           transform: isInView3 ? "none" : "translateY(200px)",
           opacity: isInView3 ? 1 : 0,
           transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"

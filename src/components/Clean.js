@@ -1,22 +1,48 @@
 import React from 'react';
+import Estearico2 from "./Botones-Descarga/Estearico";
+import Estearico from "./DescargaFicha/AcidoEstearico";
 import Acetico from "./Botones-Descarga/Acetico";
+import Acetico2 from "./DescargaFicha/AcidoAcetico";
 import Sulfonico from "./Botones-Descarga/Sulfonico";
+import SulfonicoCol from "./DescargaFicha/SulfonicoCol";
+import SulfonicoCorea from "./DescargaFicha/SulfonicoCorea";
+import SulfonicoQatar from "./DescargaFicha/SulfonicoQatar";
 import Isopropilico from "./Botones-Descarga/Isopropilico";
+import IsopropilicoChina from "./DescargaFicha/IsopropilicoChina";
+import IsopropilicoHolanda from "./DescargaFicha/IsopropilicoHol";
 import Cetilico from "./Botones-Descarga/Cetilico";
+import Cetilico2 from "./DescargaFicha/Cetilico";
 import Etilico from "./Botones-Descarga/Etilico";
 import Butilglicol from "./Botones-Descarga/Butilglicol";
+import Butilglicol2 from "./DescargaFicha/Butilglicol";
 import Escamas from "./Botones-Descarga/Escamas";
+import Escamas2 from "./DescargaFicha/Escamas";
 import CloruroBen from "./Botones-Descarga/CloruroBen";
+import CloruroBen2 from "./DescargaFicha/CloruroBen"
 import Colorantes from "./Botones-Descarga/Colorantes";
 import Formol from "./Botones-Descarga/Formol";
+import Formol2 from "./DescargaFicha/Formol";
 import Glicerina from "./Botones-Descarga/Glicerina";
+import Glicerina2 from "./DescargaFicha/Glicerina";
 import Metasilicato from "./Botones-Descarga/Metasilicato";
+import Metasilicato2 from "./DescargaFicha/Metasilicato";
 import Nicidexiolina from "./Botones-Descarga/Nipacidexiolina";
+import Nicidexiolina2 from "./DescargaFicha/Nipacidex";
 import Nonifenol from "./Botones-Descarga/Nonifenol";
+import Nonifenol2 from "./DescargaFicha/Nonil";
 import Peroxido from "./Botones-Descarga/Peroxido";
+import Peroxido2 from "./DescargaFicha/Peroxido";
 import Sles from "./Botones-Descarga/Sles";
+import SlesAlemania from "./DescargaFicha/GenapolAlemania";
+import SlesChina from "./DescargaFicha/GenapolChina";
+import SlesCorea from "./DescargaFicha/GenapolCorea";
 import SodaCaustica from "./Botones-Descarga/SodaCaustica";
+import SodaEscamas from "./DescargaFicha/SodaEscamas";
+import SodaLiquida from "./DescargaFicha/SodaLiquida";
+import SodaRokita from "./DescargaFicha/SodaRokita";
+import Texapon from "./DescargaFicha/Texapon.js";
 import Tripolifosfato from './Botones-Descarga/Tripolifosfato';
+import Tripolifosfato2 from "./DescargaFicha/TripolifosfatoTecnico";
 import imgTambor from "../Imagenes/Productos/Tambor.png";
 import imgTamborVerde from "../Imagenes/Productos/TamborVerde.png";
 import imgCarboya from "../Imagenes/Productos/Carboya.png";
@@ -278,6 +304,10 @@ function Clean() {
             </div>
             </div>
             </motion.div>
+            <div className='flex md:flex-row flex-col gap-3 items-center justify-center'>
+              <Estearico2></Estearico2>
+              <Estearico></Estearico>
+          </div>
 
           </TabPanel>
 
@@ -324,7 +354,7 @@ function Clean() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center text-lg font-semibold'>{t("content.origin")}</h2>
             
-            <div className='flex flex-col justify-center'>
+            <div className='flex flex-col justify-center items-center'>
               <img src={china} className='w-40 h-auto border-2 border-black' alt="Tambor"/>              <div className='flex justify-center'>
               <h4 className='font-bold'>{t("flags.china")}</h4>
             </div>
@@ -338,8 +368,9 @@ function Clean() {
             </div>
             </div>
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <Acetico></Acetico>
+              <Acetico2></Acetico2>
           </div>
           </TabPanel>
 
@@ -426,8 +457,11 @@ function Clean() {
             </div>
             </div>
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <Sulfonico></Sulfonico>
+              <SulfonicoCol></SulfonicoCol>
+              <SulfonicoCorea></SulfonicoCorea>
+              <SulfonicoQatar></SulfonicoQatar>
           </div>
           </TabPanel>
 
@@ -492,8 +526,10 @@ function Clean() {
             </div>
             </div>
           </motion.div>
-          <div className='flex items-center justify-center'>
+          <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <Isopropilico></Isopropilico>
+              <IsopropilicoChina></IsopropilicoChina>
+              <IsopropilicoHolanda></IsopropilicoHolanda>
           </div>
           </TabPanel>
 
@@ -556,8 +592,9 @@ function Clean() {
             </div>
             </motion.div>
 
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <Cetilico></Cetilico>
+              <Cetilico2></Cetilico2>
           </div>
             
           </TabPanel>
@@ -685,8 +722,9 @@ function Clean() {
             </div>
             </div>
           </motion.div>
-          <div className='flex items-center justify-center'>
+          <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <Butilglicol></Butilglicol>
+              <Butilglicol2></Butilglicol2>
           </div>
           </TabPanel>
 
@@ -739,8 +777,9 @@ function Clean() {
             </div>
             </div>
           </motion.div>
-          <div className='flex items-center justify-center'>
+          <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <Escamas></Escamas>
+              <Escamas2></Escamas2>
           </div>
           </TabPanel>
 
@@ -797,8 +836,9 @@ function Clean() {
             </div>
             </div>
           </motion.div>
-          <div className='flex items-center justify-center'>
+          <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <CloruroBen></CloruroBen>
+              <CloruroBen2></CloruroBen2>
           </div>
           </TabPanel>
 
@@ -839,7 +879,7 @@ function Clean() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center  text-lg font-semibold'>{t("content.origin")}</h2>
             
-            <div className='flex flex-col justify-center'>
+            <div className='flex flex-col justify-center items-center'>
               <img src={usa} className='w-40 h-auto border-2 border-black' alt="USA"/>
               <div className='flex justify-center'>
               <h4 className='font-bold'>{t("flags.usa")}</h4>
@@ -923,8 +963,9 @@ function Clean() {
             </div>
             </div>
           </motion.div>
-          <div className='flex items-center justify-center'>
+          <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <Formol></Formol>
+              <Formol2></Formol2>
           </div>
           </TabPanel>
 
@@ -998,8 +1039,9 @@ function Clean() {
             </div>
             </div>
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <Glicerina></Glicerina>
+              <Glicerina2></Glicerina2>
           </div>
           </TabPanel>
 
@@ -1043,7 +1085,7 @@ function Clean() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center'>{t("content.origin")}</h2>
             
-            <div className='flex flex-col justify-center'>
+            <div className='flex flex-col justify-center items-center'>
               <img src={china} className='w-40 h-auto border-2 border-black' alt="China"/>
               <div className='flex justify-center'>
               <h4 className='font-bold'>{t("flags.china")}</h4>
@@ -1058,8 +1100,9 @@ function Clean() {
             </div>
             </div>
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <Metasilicato></Metasilicato>
+              <Metasilicato2></Metasilicato2>
           </div>
 
           </TabPanel>
@@ -1104,7 +1147,7 @@ function Clean() {
             <div className='border-[#0e1852] md:border-r-4 max-md:border-b-4 max-md:py-5 md:px-2'>
             <h2 className='text-center  text-lg font-semibold'>{t("content.origin")}</h2>
             
-            <div className='flex flex-col justify-center'>
+            <div className='flex flex-col justify-center items-center'>
               <img src={vzla} className='w-40 h-auto border-2 border-black' alt="Venezuela"/>
               <div className='flex justify-center'>
               <h4 className='font-bold'>{t("flags.vzla")}</h4>
@@ -1119,8 +1162,9 @@ function Clean() {
             </div>
             </div>
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <Nicidexiolina></Nicidexiolina>
+              <Nicidexiolina2></Nicidexiolina2>
           </div>
 
           </TabPanel>
@@ -1181,8 +1225,9 @@ function Clean() {
             </div>
             </div>
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <Nonifenol></Nonifenol>
+              <Nonifenol2></Nonifenol2>
           </div>
 
           </TabPanel>
@@ -1256,8 +1301,9 @@ function Clean() {
             </div>
             </div>
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <Peroxido></Peroxido>
+              <Peroxido2></Peroxido2>
           </div>
           </TabPanel>
 
@@ -1331,8 +1377,11 @@ function Clean() {
             </div>
             </div>
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <Sles></Sles>
+              <SlesAlemania></SlesAlemania>
+              <SlesChina></SlesChina>
+              <SlesCorea></SlesCorea>
           </div>
 
           </TabPanel>
@@ -1417,6 +1466,9 @@ function Clean() {
             </div>
             </div>
             </motion.div>
+            <div className='flex items-center justify-center pb-2'>
+              <SodaEscamas></SodaEscamas>
+            </div>
 
             <motion.div className={`flex justify-center flex-col   border-[#0e1852] font-semibold text-lg`}
             initial={{ y: -250, opacity: 0 }}
@@ -1473,6 +1525,9 @@ function Clean() {
             </div>
             </div>
             </motion.div>
+            <div className='flex items-center justify-center pb-2'>
+              <SodaRokita></SodaRokita>
+            </div>
 
 
             <motion.div className={`flex justify-center flex-col  border-[#0e1852] font-semibold text-lg`}
@@ -1538,9 +1593,12 @@ function Clean() {
             </div>
             </div>
             </motion.div>
+            <div className='flex items-center justify-center pb-2'>
+              <SodaLiquida></SodaLiquida>
+            </div>
             <div className='flex items-center justify-center'>
               <SodaCaustica></SodaCaustica>
-          </div>
+            </div>
           
           </TabPanel>
 
@@ -1600,8 +1658,9 @@ function Clean() {
             </div>
             </div>
           </motion.div>
-          <div className='flex items-center justify-center'>
+          <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <Sles></Sles>
+              <Texapon></Texapon>
           </div>
 
           </TabPanel>
@@ -1669,8 +1728,9 @@ function Clean() {
             </div>
             </div>
             </motion.div>
-            <div className='flex items-center justify-center'>
+            <div className='flex items-center justify-center md:flex-row flex-col gap-3'>
               <Tripolifosfato></Tripolifosfato>
+              <Tripolifosfato2></Tripolifosfato2>
           </div>
 
           </TabPanel>
